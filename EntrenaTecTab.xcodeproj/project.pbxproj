@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAD88F701CB31F4800A90BE6 /* Building_Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD88F6F1CB31F4800A90BE6 /* Building_Typeface.ttf */; };
 		FAF6BD6C1CABBE2800CEC0C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */; };
 		FAF6BD6E1CABBE2800CEC0C3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6BD6D1CABBE2800CEC0C3 /* FirstViewController.swift */; };
 		FAF6BD701CABBE2800CEC0C3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6BD6F1CABBE2800CEC0C3 /* SecondViewController.swift */; };
 		FAF6BD731CABBE2800CEC0C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD711CABBE2800CEC0C3 /* Main.storyboard */; };
 		FAF6BD751CABBE2800CEC0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD741CABBE2800CEC0C3 /* Assets.xcassets */; };
 		FAF6BD781CABBE2800CEC0C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD761CABBE2800CEC0C3 /* LaunchScreen.storyboard */; };
-		FAF6BD801CABBE6300CEC0C3 /* Building_Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD7F1CABBE6300CEC0C3 /* Building_Typeface.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAD88F6F1CB31F4800A90BE6 /* Building_Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Building_Typeface.ttf; path = Assets.xcassets/Building_Typeface.ttf; sourceTree = "<group>"; };
 		FAF6BD681CABBE2800CEC0C3 /* EntrenaTecTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntrenaTecTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF6BD6D1CABBE2800CEC0C3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		FAF6BD741CABBE2800CEC0C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF6BD771CABBE2800CEC0C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF6BD791CABBE2800CEC0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAF6BD7F1CABBE6300CEC0C3 /* Building_Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Building_Typeface.ttf; path = "../../../../Downloads/Building Typeface by Leonardo Gubbioni/Building_Typeface.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		FAF6BD6A1CABBE2800CEC0C3 /* EntrenaTecTab */ = {
 			isa = PBXGroup;
 			children = (
-				FAF6BD7F1CABBE6300CEC0C3 /* Building_Typeface.ttf */,
+				FAD88F6F1CB31F4800A90BE6 /* Building_Typeface.ttf */,
 				FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */,
 				FAF6BD6D1CABBE2800CEC0C3 /* FirstViewController.swift */,
 				FAF6BD6F1CABBE2800CEC0C3 /* SecondViewController.swift */,
@@ -131,7 +131,7 @@
 				FAF6BD781CABBE2800CEC0C3 /* LaunchScreen.storyboard in Resources */,
 				FAF6BD751CABBE2800CEC0C3 /* Assets.xcassets in Resources */,
 				FAF6BD731CABBE2800CEC0C3 /* Main.storyboard in Resources */,
-				FAF6BD801CABBE6300CEC0C3 /* Building_Typeface.ttf in Resources */,
+				FAD88F701CB31F4800A90BE6 /* Building_Typeface.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +294,7 @@
 				FAF6BD7E1CABBE2800CEC0C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
