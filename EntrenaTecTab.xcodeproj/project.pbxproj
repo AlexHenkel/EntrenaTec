@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95B003901CB40B40002D7DA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */; };
+		95B003921CB40B51002D7DA4 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003911CB40B51002D7DA4 /* RecordsViewController.swift */; };
+		95B003941CB40B82002D7DA4 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */; };
+		95B003961CB40B94002D7DA4 /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003951CB40B94002D7DA4 /* RoutineTableViewController.swift */; };
 		95F4443D1CB361930012F7F6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F4443B1CB361930012F7F6 /* Realm.framework */; };
 		95F4443E1CB361930012F7F6 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95F4443B1CB361930012F7F6 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95F4443F1CB361930012F7F6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F4443C1CB361930012F7F6 /* RealmSwift.framework */; };
@@ -42,7 +46,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-
+		95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		95B003911CB40B51002D7DA4 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		95B003951CB40B94002D7DA4 /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
 		95F4443B1CB361930012F7F6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Realm.framework; sourceTree = "<group>"; };
 		95F4443C1CB361930012F7F6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../RealmSwift.framework; sourceTree = "<group>"; };
 		95F444461CB362B70012F7F6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +96,10 @@
 			children = (
 				95F444461CB362B70012F7F6 /* LoginViewController.swift */,
 				95F444481CB362CF0012F7F6 /* RegisterViewController.swift */,
+				95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */,
+				95B003911CB40B51002D7DA4 /* RecordsViewController.swift */,
+				95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */,
+				95B003951CB40B94002D7DA4 /* RoutineTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -123,7 +134,6 @@
 		FAF6BD6A1CABBE2800CEC0C3 /* EntrenaTecTab */ = {
 			isa = PBXGroup;
 			children = (
-
 				95F444431CB3624B0012F7F6 /* View Controllers */,
 				95F444451CB3625E0012F7F6 /* Classes */,
 				95F4443A1CB361570012F7F6 /* Frameworks */,
@@ -230,13 +240,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F444471CB362B70012F7F6 /* LoginViewController.swift in Sources */,
+				95B003921CB40B51002D7DA4 /* RecordsViewController.swift in Sources */,
 				95F444511CB367710012F7F6 /* Exercise.swift in Sources */,
+				95B003901CB40B40002D7DA4 /* ProfileViewController.swift in Sources */,
 				95F4444F1CB365250012F7F6 /* Routine.swift in Sources */,
 				95F444491CB362CF0012F7F6 /* RegisterViewController.swift in Sources */,
 				95F4444D1CB3639E0012F7F6 /* User.swift in Sources */,
 				FAF6BD701CABBE2800CEC0C3 /* SecondViewController.swift in Sources */,
 				FAF6BD6C1CABBE2800CEC0C3 /* AppDelegate.swift in Sources */,
 				FAF6BD6E1CABBE2800CEC0C3 /* FirstViewController.swift in Sources */,
+				95B003961CB40B94002D7DA4 /* RoutineTableViewController.swift in Sources */,
+				95B003941CB40B82002D7DA4 /* ExerciseViewController.swift in Sources */,
 				95F444551CB369C00012F7F6 /* MuscleGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

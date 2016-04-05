@@ -12,6 +12,7 @@ import RealmSwift
 class User: Object
 {
     dynamic var strStudentID = ""
+    dynamic var strName = ""
     dynamic var strPassword = ""
     dynamic var intMaxWeightArm = 0
     dynamic var intMaxWeightChest = 0
