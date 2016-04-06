@@ -10,6 +10,11 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var outDias: UILabel!
+    @IBOutlet weak var outNivel: UILabel!
+    @IBOutlet weak var outKilos: UILabel!
+    @IBOutlet weak var outPecho: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

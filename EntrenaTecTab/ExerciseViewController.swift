@@ -10,6 +10,13 @@ import UIKit
 
 class ExerciseViewController: UIViewController {
 
+    @IBOutlet weak var outDescripcion: UILabel!
+    @IBOutlet weak var outMaquina: UIImageView!
+    @IBOutlet weak var outReps: UILabel!
+    @IBOutlet weak var outGrupo: UILabel!
+    
+    @IBAction func actCompletado(sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

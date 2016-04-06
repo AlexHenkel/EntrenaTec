@@ -10,6 +10,8 @@ import UIKit
 
 class RoutineTableViewController: UITableViewController {
 
+    @IBAction func swtchRutina(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
