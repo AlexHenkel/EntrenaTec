@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ExerciseId</key>
+		<string>1</string>
+		<key>Name</key>
+		<string>Exercise 1</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 1</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>2</string>
+		<key>Name</key>
+		<string>Exercise 2</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 2</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>3</string>
+		<key>Name</key>
+		<string>Exercise 3</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 3</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>4</string>
+		<key>Name</key>
+		<string>Exercise 4</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 4</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>5</string>
+		<key>Name</key>
+		<string>Exercise 5</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 5</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>6</string>
+		<key>Name</key>
+		<string>Exercise 6</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 6</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>7</string>
+		<key>Name</key>
+		<string>Exercise 7</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 7</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>8</string>
+		<key>Name</key>
+		<string>Exercise 8</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 8</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>9</string>
+		<key>Name</key>
+		<string>Exercise 9</string>
+		<key>Description</key>
+		<string>Description</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Group 9</string>
+	</dict>
+</array>
+</plist>

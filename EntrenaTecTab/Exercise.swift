@@ -15,5 +15,5 @@ class Exercise: Object
     dynamic var strName = ""
     dynamic var strDescription = ""
     dynamic var strImageName = ""
-    dynamic var strLevel = ""
+    dynamic var strMuscleGroup = ""
 }

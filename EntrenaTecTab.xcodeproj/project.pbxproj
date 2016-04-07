@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9597E9CE1CB6E2FC00351A48 /* Exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9597E9CD1CB6E2FC00351A48 /* Exercises.plist */; };
 		95B003901CB40B40002D7DA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */; };
 		95B003921CB40B51002D7DA4 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003911CB40B51002D7DA4 /* RecordsViewController.swift */; };
 		95B003941CB40B82002D7DA4 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */; };
@@ -20,11 +21,8 @@
 		95F4444D1CB3639E0012F7F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F4444C1CB3639E0012F7F6 /* User.swift */; };
 		95F4444F1CB365250012F7F6 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F4444E1CB365250012F7F6 /* Routine.swift */; };
 		95F444511CB367710012F7F6 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F444501CB367710012F7F6 /* Exercise.swift */; };
-		95F444551CB369C00012F7F6 /* MuscleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F444541CB369C00012F7F6 /* MuscleGroup.swift */; };
 		FAD88F701CB31F4800A90BE6 /* Building_Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD88F6F1CB31F4800A90BE6 /* Building_Typeface.ttf */; };
 		FAF6BD6C1CABBE2800CEC0C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */; };
-		FAF6BD6E1CABBE2800CEC0C3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6BD6D1CABBE2800CEC0C3 /* FirstViewController.swift */; };
-		FAF6BD701CABBE2800CEC0C3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6BD6F1CABBE2800CEC0C3 /* SecondViewController.swift */; };
 		FAF6BD731CABBE2800CEC0C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD711CABBE2800CEC0C3 /* Main.storyboard */; };
 		FAF6BD751CABBE2800CEC0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD741CABBE2800CEC0C3 /* Assets.xcassets */; };
 		FAF6BD781CABBE2800CEC0C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD761CABBE2800CEC0C3 /* LaunchScreen.storyboard */; };
@@ -46,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9597E9CD1CB6E2FC00351A48 /* Exercises.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Exercises.plist; sourceTree = "<group>"; };
 		95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		95B003911CB40B51002D7DA4 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 		95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
@@ -57,12 +56,9 @@
 		95F4444C1CB3639E0012F7F6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		95F4444E1CB365250012F7F6 /* Routine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		95F444501CB367710012F7F6 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		95F444541CB369C00012F7F6 /* MuscleGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuscleGroup.swift; sourceTree = "<group>"; };
 		FAD88F6F1CB31F4800A90BE6 /* Building_Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Building_Typeface.ttf; path = Assets.xcassets/Building_Typeface.ttf; sourceTree = "<group>"; };
 		FAF6BD681CABBE2800CEC0C3 /* EntrenaTecTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntrenaTecTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAF6BD6D1CABBE2800CEC0C3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FAF6BD6F1CABBE2800CEC0C3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FAF6BD721CABBE2800CEC0C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAF6BD741CABBE2800CEC0C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF6BD771CABBE2800CEC0C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,7 +106,6 @@
 				95F4444C1CB3639E0012F7F6 /* User.swift */,
 				95F4444E1CB365250012F7F6 /* Routine.swift */,
 				95F444501CB367710012F7F6 /* Exercise.swift */,
-				95F444541CB369C00012F7F6 /* MuscleGroup.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -134,13 +129,12 @@
 		FAF6BD6A1CABBE2800CEC0C3 /* EntrenaTecTab */ = {
 			isa = PBXGroup;
 			children = (
+				FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */,
 				95F444431CB3624B0012F7F6 /* View Controllers */,
 				95F444451CB3625E0012F7F6 /* Classes */,
 				95F4443A1CB361570012F7F6 /* Frameworks */,
 				FAD88F6F1CB31F4800A90BE6 /* Building_Typeface.ttf */,
-				FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */,
-				FAF6BD6D1CABBE2800CEC0C3 /* FirstViewController.swift */,
-				FAF6BD6F1CABBE2800CEC0C3 /* SecondViewController.swift */,
+				9597E9CD1CB6E2FC00351A48 /* Exercises.plist */,
 				FAF6BD711CABBE2800CEC0C3 /* Main.storyboard */,
 				FAF6BD741CABBE2800CEC0C3 /* Assets.xcassets */,
 				FAF6BD761CABBE2800CEC0C3 /* LaunchScreen.storyboard */,
@@ -211,6 +205,7 @@
 			files = (
 				FAF6BD781CABBE2800CEC0C3 /* LaunchScreen.storyboard in Resources */,
 				FAF6BD751CABBE2800CEC0C3 /* Assets.xcassets in Resources */,
+				9597E9CE1CB6E2FC00351A48 /* Exercises.plist in Resources */,
 				FAF6BD731CABBE2800CEC0C3 /* Main.storyboard in Resources */,
 				FAD88F701CB31F4800A90BE6 /* Building_Typeface.ttf in Resources */,
 			);
@@ -246,12 +241,9 @@
 				95F4444F1CB365250012F7F6 /* Routine.swift in Sources */,
 				95F444491CB362CF0012F7F6 /* RegisterViewController.swift in Sources */,
 				95F4444D1CB3639E0012F7F6 /* User.swift in Sources */,
-				FAF6BD701CABBE2800CEC0C3 /* SecondViewController.swift in Sources */,
 				FAF6BD6C1CABBE2800CEC0C3 /* AppDelegate.swift in Sources */,
-				FAF6BD6E1CABBE2800CEC0C3 /* FirstViewController.swift in Sources */,
 				95B003961CB40B94002D7DA4 /* RoutineTableViewController.swift in Sources */,
 				95B003941CB40B82002D7DA4 /* ExerciseViewController.swift in Sources */,
-				95F444551CB369C00012F7F6 /* MuscleGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
