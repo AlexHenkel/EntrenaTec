@@ -8,8 +8,8 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
-
+class RegisterViewController: UIViewController
+{
     @IBOutlet weak var outletNombre: UITextField!
     @IBOutlet weak var outletBrazo: UITextField!
     @IBOutlet weak var outletPecho: UITextField!
@@ -18,16 +18,20 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var outletLagartijas: UITextField!
     @IBOutlet weak var outletAbs: UITextField!
     
-    @IBAction func confirmarDatos(sender: UIButton) {
+    @IBAction func confirmarDatos(sender: UIButton)
+    {
+        
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

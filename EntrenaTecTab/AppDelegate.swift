@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Por cada elemento del NSArray, crea un objeto de tipo Exercise y lo guarda en Realm.
         for exercise in arrExercises
         {
-            
             let exerciseToAdd = Exercise()
             exerciseToAdd.strExerciseID = String(exercise.objectForKey("ExerciseId")!)
             exerciseToAdd.strName = String(exercise.objectForKey("Name")!)
@@ -46,7 +45,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return NSArray(contentsOfFile: path!)!
     }
     
-    // Carga la vista que corresponde. (Si el usuario está loggeado carga la vista del Tab Bar y sino carga el loging).
+    // Carga la vista que corresponde. (Si el usuario está loggeado carga la vista del Tab Bar y sino 
+    //  carga el loging).
     func SetView()
     {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
@@ -54,9 +54,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let isLoggedIn = defaults.boolForKey("isLoggedIn")
+        let isRegistered = defaults.boolForKey("isRegistered")
+        
+        // Si el usuario ya está loggeado, checa si ya registró sus datos y manda a la vista
+        //  correspondiente.
         if isLoggedIn
         {
-            initViewController = storyBoard.instantiateViewControllerWithIdentifier("TabBar")
+            if isRegistered
+            {
+                initViewController = storyBoard.instantiateViewControllerWithIdentifier("TabBar")
+            }
+            else
+            {
+                initViewController = storyBoard.instantiateViewControllerWithIdentifier("Register")
+            }
         }
         else
         {
