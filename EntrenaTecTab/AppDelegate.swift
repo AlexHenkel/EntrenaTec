@@ -46,6 +46,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return NSArray(contentsOfFile: path!)!
     }
     
+    // Carga la vista que corresponde. (Si el usuario está loggeado carga la vista del Tab Bar y sino carga el loging).
+    func SetView()
+    {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        var initViewController: UIViewController
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let isLoggedIn = defaults.boolForKey("isLoggedIn")
+        if isLoggedIn
+        {
+            initViewController = storyBoard.instantiateViewControllerWithIdentifier("TabBar")
+        }
+        else
+        {
+            initViewController = storyBoard.instantiateViewControllerWithIdentifier("LogIn")
+        }
+        
+        self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = initViewController
+        self.window?.makeKeyAndVisible()
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
         // Override point for customization after application launch.
@@ -56,6 +78,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.preloadData()
             defaults.setBool(true, forKey: "isPreloaded")
         }
+        
+        self.SetView()
         
         return true
     }
