@@ -9,22 +9,43 @@
 import UIKit
 import RealmSwift
 
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController
+{
     @IBOutlet weak var outletMatritucla: UITextField!
     
-    @IBAction func actionLogIn(sender: UIButton) {
+    @IBAction func actionLogIn(sender: UIButton)
+    {
+        if outletMatritucla.text != ""
+        {
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setBool(true, forKey: "isLoggedIn")
+            defaults.setObject(outletMatritucla.text, forKey: "studentId")
+            
+            var viewController: UIViewController
+            
+            self.storyboard
+            
+            if defaults.boolForKey("isRegistered")
+            {
+                viewController = self.storyboard!.instantiateViewControllerWithIdentifier("TabBar")
+            }
+            else
+            {
+                viewController = self.storyboard!.instantiateViewControllerWithIdentifier("Register")
+            }
+            
+            self.presentViewController(viewController, animated: true, completion: nil)
+        }
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
