@@ -70,7 +70,7 @@
         <!--Perfil-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Perfil" id="9pv-A4-QxB" customClass="FirstViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -236,7 +236,7 @@
         <!--Récords-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Records" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -248,10 +248,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ss3-IN-CtP">
                                 <rect key="frame" x="67" y="28" width="184" height="48"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-Ix-IZW">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-Ix-IZW">
                                         <rect key="frame" x="0.0" y="0.0" width="184" height="48"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TUS RÉCORDS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-u6-nhg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TUS RÉCORDS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-u6-nhg">
                                                 <rect key="frame" x="0.0" y="0.0" width="184" height="48"/>
                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="48"/>
                                                 <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -349,7 +349,7 @@
         <!--Rutina *fecha* -->
         <scene sceneID="yqX-Pf-b5Y">
             <objects>
-                <tableViewController id="oN1-Rr-Mnt" customClass="RoutineTableViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Rutina" id="oN1-Rr-Mnt" customClass="RoutineTableViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" id="fKS-JM-wfK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,7 +501,7 @@
         <!--Login View Controller-->
         <scene sceneID="Cxr-Dd-4hU">
             <objects>
-                <viewController id="Vdf-Yc-kiU" customClass="LoginViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="Vdf-Yc-kiU" customClass="LoginViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eaK-5a-nqK"/>
                         <viewControllerLayoutGuide type="bottom" id="eGC-Ne-NaM"/>
@@ -564,7 +564,7 @@
         <!--Register View Controller-->
         <scene sceneID="jxh-Ym-wdv">
             <objects>
-                <viewController id="kzb-B0-ovl" customClass="RegisterViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Register" id="kzb-B0-ovl" customClass="RegisterViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qc8-UG-bbp"/>
                         <viewControllerLayoutGuide type="bottom" id="8Or-2B-J1I"/>
@@ -762,7 +762,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
