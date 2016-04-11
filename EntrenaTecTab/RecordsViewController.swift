@@ -10,4 +10,8 @@ import UIKit
 
 class RecordsViewController: UIViewController {
 
+    @IBOutlet weak var outletDias: UILabel!
+    @IBOutlet weak var outletNivel: UILabel!
+    @IBOutlet weak var outletBrazoRecord: UILabel!
+    @IBOutlet weak var outletPechoRecord: UILabel!
 }

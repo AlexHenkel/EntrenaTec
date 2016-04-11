@@ -70,7 +70,7 @@
         <!--Perfil-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController storyboardIdentifier="Perfil" id="9pv-A4-QxB" customClass="FirstViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Perfil" id="9pv-A4-QxB" customClass="ProfileViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -219,14 +219,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" image="user" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="outAbs" destination="QQr-oT-ux5" id="aXR-Ag-1Vz"/>
-                        <outlet property="outBrazo" destination="LBF-Rl-fxN" id="T9I-G5-e8m"/>
-                        <outlet property="outHombro" destination="Us1-NO-3Qb" id="D4v-cy-8bG"/>
-                        <outlet property="outLagartijas" destination="AEJ-fj-H1i" id="chg-1v-7vG"/>
-                        <outlet property="outPecho" destination="2al-Vb-bGu" id="SJ4-Gi-gcE"/>
-                        <outlet property="outPierna" destination="3af-q3-ugz" id="K1o-IQ-3cR"/>
-                        <outlet property="outletNivel" destination="52D-Ku-OOs" id="DYy-to-Tod"/>
-                        <outlet property="outletNombre" destination="Cml-vM-vbL" id="u0P-WA-Ddt"/>
+                        <outlet property="outletAbs" destination="QQr-oT-ux5" id="7St-OI-u86"/>
+                        <outlet property="outletBrazo" destination="LBF-Rl-fxN" id="fpi-9U-lz5"/>
+                        <outlet property="outletHombro" destination="Us1-NO-3Qb" id="oN7-lb-sLs"/>
+                        <outlet property="outletImagen" destination="7n2-BK-AkS" id="9tH-ad-RvU"/>
+                        <outlet property="outletLagartijas" destination="AEJ-fj-H1i" id="C8Y-u2-0Ho"/>
+                        <outlet property="outletNivel" destination="52D-Ku-OOs" id="0ZZ-Qh-3u2"/>
+                        <outlet property="outletNombre" destination="Cml-vM-vbL" id="TWi-gl-kHt"/>
+                        <outlet property="outletPecho" destination="2al-Vb-bGu" id="nbg-N8-G9H"/>
+                        <outlet property="outletPierna" destination="3af-q3-ugz" id="osK-zy-FBB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -236,7 +237,7 @@
         <!--Récords-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="Records" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Records" id="8rJ-Kc-sve" customClass="RecordsViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -336,10 +337,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Récords" image="sombrero" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="outDias" destination="AeI-l4-B5S" id="VjJ-oj-Mg3"/>
-                        <outlet property="outKilos" destination="wBl-Rw-daC" id="BLl-jV-q9g"/>
-                        <outlet property="outNivel" destination="9bh-b0-qO8" id="mUe-1h-NS4"/>
-                        <outlet property="outPecho" destination="rDC-TB-ahB" id="JmH-hV-ZrG"/>
+                        <outlet property="outletBrazoRecord" destination="wBl-Rw-daC" id="1a9-Ss-QMK"/>
+                        <outlet property="outletDias" destination="AeI-l4-B5S" id="meQ-nf-n5H"/>
+                        <outlet property="outletNivel" destination="9bh-b0-qO8" id="Dgq-aK-e95"/>
+                        <outlet property="outletPechoRecord" destination="rDC-TB-ahB" id="c2S-u6-1uv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
