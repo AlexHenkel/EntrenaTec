@@ -11,10 +11,8 @@ import UIKit
 class RegisterViewController: UIViewController
 {
     @IBOutlet weak var outletNombre: UITextField!
-    @IBOutlet weak var outletBrazo: UITextField!
-    @IBOutlet weak var outletPecho: UITextField!
-    @IBOutlet weak var outletHombro: UITextField!
-    @IBOutlet weak var outletPierna: UITextField!
+    @IBOutlet weak var outletFlex: UITextField!
+    @IBOutlet weak var outletCooper: UITextField!
     @IBOutlet weak var outletLagartijas: UITextField!
     @IBOutlet weak var outletAbs: UITextField!
     
