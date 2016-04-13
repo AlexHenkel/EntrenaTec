@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RegisterViewController: UIViewController
 {
@@ -19,6 +20,38 @@ class RegisterViewController: UIViewController
     @IBAction func confirmarDatos(sender: UIButton)
     {
         
+        // Saca los datos del outlet quitandole blancos en exceso.
+        let strNombre = outletNombre.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strFlex = outletFlex.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strCooper = outletCooper.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strLagartijas = outletLagartijas.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strAbs = outletAbs.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        
+        if strNombre != "" && strFlex != "" && strCooper != "" && strLagartijas != "" && strAbs != ""
+        {
+            let defaults = NSUserDefaults.standardUserDefaults()
+            let user = defaults.stringForKey("studentId")!
+            
+            let realm = try! Realm()
+            
+            let student = User()
+            student.strStudentID = user
+            student.strName = strNombre
+            student.intFlex1 = Int(strFlex)!
+            student.doubleCooper1 = Double(strCooper)!
+            student.intPushups1 = Int(strLagartijas)!
+            student.intAbs1 = Int(strAbs)!
+            
+            try! realm.write
+            {
+                realm.add(student)
+            }
+            
+            defaults.setBool(true, forKey: "isRegistered")
+            
+            let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("TabBar")
+            self.presentViewController(viewController, animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad()

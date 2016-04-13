@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         else
         {
-            initViewController = storyBoard.instantiateViewControllerWithIdentifier("LogIn")
+            initViewController = storyBoard.instantiateViewControllerWithIdentifier("Login")
         }
         
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)

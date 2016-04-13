@@ -15,11 +15,13 @@ class LoginViewController: UIViewController
     
     @IBAction func actionLogIn(sender: UIButton)
     {
-        if outletMatritucla.text != ""
+        let strMatricula = outletMatritucla.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        
+        if strMatricula != ""
         {
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setBool(true, forKey: "isLoggedIn")
-            defaults.setObject(outletMatritucla.text, forKey: "studentId")
+            defaults.setObject(strMatricula, forKey: "studentId")
             
             var viewController: UIViewController
             
