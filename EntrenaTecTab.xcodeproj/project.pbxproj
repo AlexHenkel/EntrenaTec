@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A4D8D711CBE0F110078DFA0 /* RoutineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D8D701CBE0F110078DFA0 /* RoutineTableViewCell.swift */; };
 		5A7CB39F1CBDAF1700E52568 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7CB39E1CBDAF1700E52568 /* EditViewController.swift */; };
 		9597E9CE1CB6E2FC00351A48 /* Exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9597E9CD1CB6E2FC00351A48 /* Exercises.plist */; };
 		95B003901CB40B40002D7DA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A4D8D701CBE0F110078DFA0 /* RoutineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewCell.swift; sourceTree = "<group>"; };
 		5A7CB39E1CBDAF1700E52568 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		9597E9CD1CB6E2FC00351A48 /* Exercises.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Exercises.plist; sourceTree = "<group>"; };
 		95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				95F444461CB362B70012F7F6 /* LoginViewController.swift */,
 				95F444481CB362CF0012F7F6 /* RegisterViewController.swift */,
+				5A4D8D701CBE0F110078DFA0 /* RoutineTableViewCell.swift */,
 				95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */,
 				5A7CB39E1CBDAF1700E52568 /* EditViewController.swift */,
 				95B003911CB40B51002D7DA4 /* RecordsViewController.swift */,
@@ -247,6 +250,7 @@
 				FAF6BD6C1CABBE2800CEC0C3 /* AppDelegate.swift in Sources */,
 				95B003961CB40B94002D7DA4 /* RoutineTableViewController.swift in Sources */,
 				5A7CB39F1CBDAF1700E52568 /* EditViewController.swift in Sources */,
+				5A4D8D711CBE0F110078DFA0 /* RoutineTableViewCell.swift in Sources */,
 				95B003941CB40B82002D7DA4 /* ExerciseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

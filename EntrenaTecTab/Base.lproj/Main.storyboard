@@ -308,7 +308,7 @@
                             <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                         </progressView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CeldaRutina" rowHeight="76" id="mDI-V6-zxc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CeldaRutina" rowHeight="76" id="mDI-V6-zxc" customClass="RoutineTableViewCell" customModule="EntrenaTecTab" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="94.5" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mDI-V6-zxc" id="gTu-Jy-dmN">
@@ -330,6 +330,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="outletEjercicio" destination="G0d-z0-uA9" id="uxT-QU-fGH"/>
+                                    <outlet property="outletSubtitulo" destination="Rw9-lr-eie" id="wgF-Pn-HsN"/>
                                     <segue destination="MFD-s7-yKJ" kind="show" id="ltf-Lf-MCo"/>
                                 </connections>
                             </tableViewCell>
