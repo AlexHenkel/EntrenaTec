@@ -47,7 +47,6 @@ class ProfileViewController: UIViewController
             self.outletLagartijasPerfil.text = String(student[0].intPushups1)
             self.outletAbsPerfil.text = String(student[0].intAbs1)
         }
-        
     }
     
     override func didReceiveMemoryWarning()
@@ -56,14 +55,22 @@ class ProfileViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func unwind(sender: UIStoryboardSegue)
+    {
+        
+    }
     
-    /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+     {
+        let view = segue.destinationViewController as! EditViewController
+        view.strLevel = self.outletNivel.text
+        view.strNombre = self.outletNombre.text
+        view.strCooper = self.outletCooperPerfil.text
+        view.strFlex = self.outletFlexPerfil.text
+        view.strLagartijas = self.outletLagartijasPerfil.text
+        view.strAbs = self.outletAbsPerfil.text
      }
-     */
 }
