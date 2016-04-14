@@ -7,11 +7,30 @@
 //
 
 import UIKit
+import RealmSwift
 
-class AddTableViewController: UITableViewController {
 
-    override func viewDidLoad() {
+protocol addRoutineProtocol
+{
+    func saveNewRoutine()
+    func popView()
+}
+
+class AddTableViewController: UITableViewController
+{
+    var arrExercises = [Exercise]()
+    var arrSelectedExercises = [Exercise]()
+
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        
+        let realm = try! Realm()
+        
+        let exercises = realm.objects(Exercise)
+        
+        self.arrExercises = Array(exercises)
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -20,32 +39,35 @@ class AddTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.arrExercises.count
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCellWithIdentifier("addCell", forIndexPath: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = self.arrExercises[indexPath.row].strName
+        cell.detailTextLabel?.text = self.arrExercises[indexPath.row].strMuscleGroup
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
