@@ -16,4 +16,5 @@ class Exercise: Object
     dynamic var strDescription = ""
     dynamic var strImageName = ""
     dynamic var strMuscleGroup = ""
+    dynamic var boolCompletado = false
 }

@@ -23,4 +23,5 @@ class User: Object
     dynamic var intPushups2 = 0
     dynamic var doubleCooper1: Double = 0.0
     dynamic var doubleCooper2: Double = 0.0
+    let routines = List<Routine>()
 }

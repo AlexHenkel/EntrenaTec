@@ -196,10 +196,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ss3-IN-CtP">
                                 <rect key="frame" x="67" y="28" width="184" height="48"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-Ix-IZW">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-Ix-IZW">
                                         <rect key="frame" x="0.0" y="0.0" width="184" height="48"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TUS RÉCORDS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-u6-nhg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TUS RÉCORDS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-u6-nhg">
                                                 <rect key="frame" x="0.0" y="0.0" width="184" height="48"/>
                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="48"/>
                                                 <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -335,7 +335,7 @@
                                     <segue destination="MFD-s7-yKJ" kind="show" id="ltf-Lf-MCo"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cgQ-kn-tRp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="completeCell" id="cgQ-kn-tRp">
                                 <rect key="frame" x="0.0" y="170.5" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cgQ-kn-tRp" id="1BV-S1-9kk">
@@ -374,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="922" y="861"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Edit Routine Table View Controller-->
         <scene sceneID="syX-HW-kea">
             <objects>
-                <tableViewController id="Ehp-vm-1dO" sceneMemberID="viewController">
+                <tableViewController id="Ehp-vm-1dO" customClass="EditRoutineTableViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="SFM-ba-PxQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,16 +423,16 @@
             </objects>
             <point key="canvasLocation" x="1355" y="1578"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Add Table View Controller-->
         <scene sceneID="EO0-uZ-jS3">
             <objects>
-                <tableViewController id="TVC-RM-O7j" sceneMemberID="viewController">
+                <tableViewController id="TVC-RM-O7j" customClass="AddTableViewController" customModule="EntrenaTecTab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DTX-hm-ll1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ue7-Ei-gqJ" detailTextLabel="GRW-p4-sEH" style="IBUITableViewCellStyleSubtitle" id="XKP-0j-WOc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addCell" textLabel="ue7-Ei-gqJ" detailTextLabel="GRW-p4-sEH" style="IBUITableViewCellStyleSubtitle" id="XKP-0j-WOc">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XKP-0j-WOc" id="Zp0-2B-hhC">
@@ -679,7 +679,6 @@
                                 </state>
                                 <connections>
                                     <action selector="confirmarDatos:" destination="kzb-B0-ovl" eventType="touchUpInside" id="vBV-H1-MGo"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="E0Q-1p-wih"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DATOS INICIALES:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKk-Ki-xAV">

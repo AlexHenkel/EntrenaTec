@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import RealmSwift
 
-class RoutineTableViewController: UITableViewController {
-
-    @IBAction func swtchRutina(sender: AnyObject) {
+class RoutineTableViewController: UITableViewController
+{
+    var listExercises = List<Exercise>()
+    
+    @IBAction func swtchRutina(sender: AnyObject)
+    {
+        
     }
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -20,34 +26,67 @@ class RoutineTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let user = defaults.stringForKey("studentId")!
+        
+        let realm = try! Realm()
+        
+        let student = realm.objects(User).filter("strStudentID == %@", user).first
+        
+        if student != nil
+        {
+            let routines = student!.routines
+            let activeRoutine = routines.filter("boolCompleted == %@", false).first
+            if activeRoutine != nil
+            {
+                self.listExercises = (activeRoutine?.exercises)!
+            }
+        }
+        
+
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if self.listExercises.count == 0
+        {
+            return 0
+        }
+        
+        return self.listExercises.count + 1
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        if indexPath.row == self.listExercises.count
+        {
+            let cell = tableView.dequeueReusableCellWithIdentifier("completeCell", forIndexPath: indexPath)
+            return cell
+        }
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("celdaRutina", forIndexPath: indexPath) as! RoutineTableViewCell
 
-        // Configure the cell...
+        cell.outletEjercicio.text = self.listExercises[indexPath.row].strName
+        cell.outletSubtitulo.text = self.listExercises[indexPath.row].strMuscleGroup
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
