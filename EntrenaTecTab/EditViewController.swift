@@ -66,6 +66,7 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             self.presentViewController(viewController, animated: true, completion: nil)
         }
     }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -75,7 +76,7 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.outletPicker.dataSource = self
         
         //Agregar Datos al Arreglo para el Picker
-        pickerData = ["Principiante", "Intermedio", "Avanzado"]
+        pickerData = ["PRINCIPIANTE", "INTERMEDIO", "AVANZADO"]
         
         self.loadData()
     }
