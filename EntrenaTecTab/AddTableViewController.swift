@@ -21,6 +21,9 @@ class AddTableViewController: UITableViewController
     var arrExercises = [Exercise]()
     var arrSelectedExercises = [Exercise]()
 
+    @IBAction func actAddDone(sender: AnyObject) {
+    }
+
     override func viewDidLoad()
     {
         super.viewDidLoad()

@@ -10,6 +10,7 @@ import UIKit
 
 class EditRoutineTableViewController: UITableViewController {
 
+    @IBOutlet weak var actEditDone: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
