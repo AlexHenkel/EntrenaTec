@@ -27,7 +27,7 @@ class AddTableViewController: UITableViewController
         
         let realm = try! Realm()
         
-        let exercises = realm.objects(Exercise)
+        let exercises = realm.objects(Exercise).sorted("strMuscleGroup")
         
         self.arrExercises = Array(exercises)
     }

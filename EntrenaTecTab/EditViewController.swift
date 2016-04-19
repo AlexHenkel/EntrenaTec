@@ -76,7 +76,7 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.outletPicker.dataSource = self
         
         //Agregar Datos al Arreglo para el Picker
-        pickerData = ["PRINCIPIANTE", "INTERMEDIO", "AVANZADO"]
+        pickerData = ["Principiante", "Intermedio", "Avanzado"]
         
         self.loadData()
     }

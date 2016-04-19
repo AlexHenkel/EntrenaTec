@@ -20,12 +20,12 @@ class RoutineTableViewController: UITableViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let today = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yy"
+        let date = dateFormatter.stringFromDate(today)
+        self.title = "Rutina \(date)"
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let user = defaults.stringForKey("studentId")!
