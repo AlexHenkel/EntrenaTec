@@ -41,7 +41,7 @@ class ProfileViewController: UIViewController
         if student.count > 0
         {
             self.outletNombre.text = student[0].strName.uppercaseString
-            self.outletNivel.text = student[0].strLevel
+            self.outletNivel.text = student[0].strLevel.uppercaseString
             self.outletCooperPerfil.text = String(format:"%0.2f", student[0].doubleCooper1)
             self.outletFlexPerfil.text = String(student[0].intFlex1)
             self.outletLagartijasPerfil.text = String(student[0].intPushups1)
