@@ -19,7 +19,7 @@ protocol addRoutineProtocol
 class AddTableViewController: UITableViewController
 {
     var arrExercises = [Exercise]()
-    var arrSelectedExercises = [Exercise]()
+    var dicSelectedExercises = [String: Exercise]()
 
     @IBAction func actAddDone(sender: AnyObject) {
     }
@@ -30,16 +30,9 @@ class AddTableViewController: UITableViewController
         
         let realm = try! Realm()
         
-        let exercises = realm.objects(Exercise)
+        let exercises = realm.objects(Exercise).sorted("strMuscleGroup")
         
         self.arrExercises = Array(exercises)
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning()
@@ -70,6 +63,22 @@ class AddTableViewController: UITableViewController
         cell.detailTextLabel?.text = self.arrExercises[indexPath.row].strMuscleGroup
 
         return cell
+    }
+    
+    override func tableView(tableView:UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)!
+        
+        if cell.accessoryType == .Checkmark
+        {
+            cell.accessoryType = .None
+            self.dicSelectedExercises.removeValueForKey("\(self.arrExercises[indexPath.row].strName)")
+        }
+        else if cell.accessoryType == .None
+        {
+            cell.accessoryType = .Checkmark
+            self.dicSelectedExercises["\(self.arrExercises[indexPath.row].strName)"] = self.arrExercises[indexPath.row]
+        }
     }
 
     /*

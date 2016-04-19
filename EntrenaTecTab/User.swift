@@ -14,7 +14,7 @@ class User: Object
     dynamic var strStudentID = ""
     dynamic var strName = ""
     dynamic var strPassword = ""
-    dynamic var strLevel = "Principiante"
+    dynamic var strLevel = "PRINCIPIANTE"
     dynamic var intFlex1 = 0
     dynamic var intFlex2 = 0
     dynamic var intAbs1 = 0

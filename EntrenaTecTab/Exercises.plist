@@ -6,109 +6,745 @@
 		<key>ExerciseId</key>
 		<string>1</string>
 		<key>Name</key>
-		<string>Exercise 1</string>
+		<string>Flexión acostado - MS</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Flexión acostado utilizando máquina selectiva</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 1</string>
+		<string>Pierna</string>
 	</dict>
 	<dict>
 		<key>ExerciseId</key>
 		<string>2</string>
 		<key>Name</key>
-		<string>Exercise 2</string>
+		<string>Glúteos - MS</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Glúteos usando máquina selectiva</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 2</string>
+		<string>Pierna</string>
 	</dict>
 	<dict>
 		<key>ExerciseId</key>
 		<string>3</string>
 		<key>Name</key>
-		<string>Exercise 3</string>
+		<string>Prensa Horizontal - MS</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Prensa Horizontal usando máquina selectiva</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 3</string>
+		<string>Pierna</string>
 	</dict>
 	<dict>
 		<key>ExerciseId</key>
 		<string>4</string>
 		<key>Name</key>
-		<string>Exercise 4</string>
+		<string>Extensiones - MS</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Extensiones utilizando máquina selectiva</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 4</string>
+		<string>Pierna</string>
 	</dict>
 	<dict>
 		<key>ExerciseId</key>
 		<string>5</string>
 		<key>Name</key>
-		<string>Exercise 5</string>
+		<string>Abductor - MS</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Abductor máquina selectiva</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 5</string>
+		<string>Pierna</string>
 	</dict>
 	<dict>
 		<key>ExerciseId</key>
 		<string>6</string>
 		<key>Name</key>
-		<string>Exercise 6</string>
+		<string>Flexión sentado - MS</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Flexión sentado máquina selectiva</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 6</string>
+		<string>Pierna</string>
 	</dict>
 	<dict>
 		<key>ExerciseId</key>
 		<string>7</string>
 		<key>Name</key>
-		<string>Exercise 7</string>
+		<string>Pantorrilla parado - MS</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Pantorrilla parado máquina selectiva</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 7</string>
+		<string>Pierna</string>
 	</dict>
 	<dict>
 		<key>ExerciseId</key>
 		<string>8</string>
 		<key>Name</key>
-		<string>Exercise 8</string>
+		<string>Extensiones - AL</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Extensiones aparato libre</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 8</string>
+		<string>Pierna</string>
 	</dict>
 	<dict>
 		<key>ExerciseId</key>
 		<string>9</string>
 		<key>Name</key>
-		<string>Exercise 9</string>
+		<string>Flexión 1 pierna - AL</string>
 		<key>Description</key>
-		<string>Description</string>
+		<string>Flexión 1 pierna aparato libre</string>
 		<key>ImageName</key>
 		<string>img1</string>
 		<key>MuscleGroup</key>
-		<string>Group 9</string>
+		<string>Pierna</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>10</string>
+		<key>Name</key>
+		<string>Máquina smith - AL</string>
+		<key>Description</key>
+		<string>Máquina smith aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pierna</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>11</string>
+		<key>Name</key>
+		<string>Glúteo - AL</string>
+		<key>Description</key>
+		<string>Glúteo aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pierna</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>12</string>
+		<key>Name</key>
+		<string>Jaula/Sentadilla - AL</string>
+		<key>Description</key>
+		<string>Jaula/Sentadilla aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pierna</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>13</string>
+		<key>Name</key>
+		<string>Prensa inclinada - AL</string>
+		<key>Description</key>
+		<string>Prensa inclinada aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pierna</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>14</string>
+		<key>Name</key>
+		<string>Curl Predicador - MS</string>
+		<key>Description</key>
+		<string>Curl predicador máquina selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>15</string>
+		<key>Name</key>
+		<string>Curl alto - CO</string>
+		<key>Description</key>
+		<string>Curl alto Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>16</string>
+		<key>Name</key>
+		<string>Curl alternado - CO</string>
+		<key>Description</key>
+		<string>Curl alternado - Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>17</string>
+		<key>Name</key>
+		<string>Curl una mano - CO</string>
+		<key>Description</key>
+		<string>Curl una mano Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>18</string>
+		<key>Name</key>
+		<string>Curl - CO</string>
+		<key>Description</key>
+		<string>Curl Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>19</string>
+		<key>Name</key>
+		<string>Curl predicador - AL</string>
+		<key>Description</key>
+		<string>Curl predicador aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>20</string>
+		<key>Name</key>
+		<string>Curl - TS</string>
+		<key>Description</key>
+		<string>Curl torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>21</string>
+		<key>Name</key>
+		<string>Curl una mano - TS</string>
+		<key>Description</key>
+		<string>Curl una mano torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>22</string>
+		<key>Name</key>
+		<string>Curl alto - TS</string>
+		<key>Description</key>
+		<string>Curl alto torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Bíceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>23</string>
+		<key>Name</key>
+		<string>Extensiones sentado - MS</string>
+		<key>Description</key>
+		<string>Extensiones sentado en máquina selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>24</string>
+		<key>Name</key>
+		<string>Empujones - CO</string>
+		<key>Description</key>
+		<string>Empujones Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>25</string>
+		<key>Name</key>
+		<string>Extensiones sobre cabeza - CO</string>
+		<key>Description</key>
+		<string>Extensiones sobre cabeza Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>26</string>
+		<key>Name</key>
+		<string>Empujones invertidos - CO</string>
+		<key>Description</key>
+		<string>Extensiones invertidos Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>27</string>
+		<key>Name</key>
+		<string>Empujones una mano - CO</string>
+		<key>Description</key>
+		<string>Empujones una mano Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>28</string>
+		<key>Name</key>
+		<string>Jalón lateral - CO</string>
+		<key>Description</key>
+		<string>Jalón lateral Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>29</string>
+		<key>Name</key>
+		<string>Jalón interno - CO</string>
+		<key>Description</key>
+		<string>Jalón interno Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>30</string>
+		<key>Name</key>
+		<string>Jalón detrás de cabeza - CO</string>
+		<key>Description</key>
+		<string>Jalón detrás de cabeza - Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>31</string>
+		<key>Name</key>
+		<string>Empujones - TS</string>
+		<key>Description</key>
+		<string>Empujones torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>32</string>
+		<key>Name</key>
+		<string>Empujones una mano - TS</string>
+		<key>Description</key>
+		<string>Empujones una mano torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>33</string>
+		<key>Name</key>
+		<string>Empujón lateral - TS</string>
+		<key>Description</key>
+		<string>Empujón lateral torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>34</string>
+		<key>Name</key>
+		<string>Empujón interno - TS</string>
+		<key>Description</key>
+		<string>Empujón interno torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>35</string>
+		<key>Name</key>
+		<string>Empujones sobre cabeza - TS</string>
+		<key>Description</key>
+		<string>Empujones sobre cabeza torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>36</string>
+		<key>Name</key>
+		<string>Empujón sobre cabeza 1 mano - TS</string>
+		<key>Description</key>
+		<string>Empujones sobre cabeza una mano torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>37</string>
+		<key>Name</key>
+		<string>Patadas - TS</string>
+		<key>Description</key>
+		<string>Patadas torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Tríceps</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>38</string>
+		<key>Name</key>
+		<string>Remo sentado - MS</string>
+		<key>Description</key>
+		<string>Remo sentado máquina selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>39</string>
+		<key>Name</key>
+		<string>Jalón frontal - MS</string>
+		<key>Description</key>
+		<string>Jalón frontal máquina selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>40</string>
+		<key>Name</key>
+		<string>Dominadas - CO</string>
+		<key>Description</key>
+		<string>Dominadas Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>41</string>
+		<key>Name</key>
+		<string>Jalón frontal - CO</string>
+		<key>Description</key>
+		<string>Jalón frontal Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>42</string>
+		<key>Name</key>
+		<string>Remo sentado - CO</string>
+		<key>Description</key>
+		<string>Remo sentado Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>43</string>
+		<key>Name</key>
+		<string>Remo sentado - AL</string>
+		<key>Description</key>
+		<string>Remo Sentado aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>44</string>
+		<key>Name</key>
+		<string>Jalón frontal - AL</string>
+		<key>Description</key>
+		<string>Jalón frontal aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>45</string>
+		<key>Name</key>
+		<string>Remo inclinado - TS</string>
+		<key>Description</key>
+		<string>Remo inclinado torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>46</string>
+		<key>Name</key>
+		<string>Remo a una mano - TS</string>
+		<key>Description</key>
+		<string>Remo a una mano torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>47</string>
+		<key>Name</key>
+		<string>Jalón recto - TS</string>
+		<key>Description</key>
+		<string>Jalón recto torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Espalda</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>48</string>
+		<key>Name</key>
+		<string>Press hombro - MS</string>
+		<key>Description</key>
+		<string>Press hombro máquina selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Hombro</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>49</string>
+		<key>Name</key>
+		<string>Press hombro - AL</string>
+		<key>Description</key>
+		<string>Press hombro aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Hombro</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>50</string>
+		<key>Name</key>
+		<string>Lateral Rise - AL</string>
+		<key>Description</key>
+		<string>Lateral Rise aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Hombro</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>51</string>
+		<key>Name</key>
+		<string>Remo parado - TS</string>
+		<key>Description</key>
+		<string>Remo parado torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Hombro</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>52</string>
+		<key>Name</key>
+		<string>Lateral una mano - TS</string>
+		<key>Description</key>
+		<string>Lateral una mano torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Hombro</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>53</string>
+		<key>Name</key>
+		<string>Elevación frontal 1 mano - TS</string>
+		<key>Description</key>
+		<string>Elevación frontal 1 mano torre selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Hombro</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>54</string>
+		<key>Name</key>
+		<string>Press pecho - MS</string>
+		<key>Description</key>
+		<string>Press pecho máquina selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pecho</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>55</string>
+		<key>Name</key>
+		<string>Peck Deck - MS</string>
+		<key>Description</key>
+		<string>Peck Deck máquina selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pecho</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>56</string>
+		<key>Name</key>
+		<string>Aperturas - CO</string>
+		<key>Description</key>
+		<string>Aperturas Cross-Over</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pecho</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>57</string>
+		<key>Name</key>
+		<string>Bench press - AL</string>
+		<key>Description</key>
+		<string>Bench press aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pecho</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>58</string>
+		<key>Name</key>
+		<string>Bench press inclinado - AL</string>
+		<key>Description</key>
+		<string>Bench press inclinado aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pecho</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>59</string>
+		<key>Name</key>
+		<string>Bench press declinado - AL</string>
+		<key>Description</key>
+		<string>Bench press declinado aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pecho</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>60</string>
+		<key>Name</key>
+		<string>Máquina inclinado - AL</string>
+		<key>Description</key>
+		<string>Máquina inclinado aparato libre</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Pecho</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>61</string>
+		<key>Name</key>
+		<string>Crunchs - MS</string>
+		<key>Description</key>
+		<string>Crunchs máquina selectiva</string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Abdomen</string>
+	</dict>
+	<dict>
+		<key>ExerciseId</key>
+		<string>62</string>
+		<key>Name</key>
+		<string>Máquina de apoyo - AL</string>
+		<key>Description</key>
+		<string>Máquina de apoyo aparato libre </string>
+		<key>ImageName</key>
+		<string>img1</string>
+		<key>MuscleGroup</key>
+		<string>Abdomen</string>
 	</dict>
 </array>
 </plist>
