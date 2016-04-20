@@ -117,5 +117,11 @@ class RoutineTableViewController: UITableViewController, addRoutineProtocol
             view.delegado = self
         }
         
+        if segue.identifier == "viewExerciseSegue"
+        {
+            let view = segue.destinationViewController as! ExerciseViewController
+            let index = self.tableView.indexPathForSelectedRow?.row
+            view.exerciseToShow = self.listExercises[index!]
+        }
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ExerciseViewController: UIViewController
 {
@@ -15,6 +16,8 @@ class ExerciseViewController: UIViewController
     @IBOutlet weak var outMaquina: UIImageView!
     @IBOutlet weak var outReps: UILabel!
     @IBOutlet weak var outGrupo: UILabel!
+    
+    var exerciseToShow: Exercise!
     
     //------------------------------------------------------------------------------------------------------------------
     @IBAction func actCompletado(sender: UIButton)
@@ -26,6 +29,11 @@ class ExerciseViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.title = self.exerciseToShow.strName.uppercaseString
+        self.outDescripcion.text = self.exerciseToShow.strDescription.uppercaseString
+        self.outGrupo.text = self.exerciseToShow.strMuscleGroup.uppercaseString
+        self.outMaquina.image = UIImage(named: self.exerciseToShow.strImageName)
+        
     }
 
     //------------------------------------------------------------------------------------------------------------------
