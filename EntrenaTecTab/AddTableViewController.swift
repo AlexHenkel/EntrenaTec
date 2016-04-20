@@ -17,7 +17,7 @@ protocol addRoutineProtocol
 
 class AddTableViewController: UITableViewController
 {
-    //--------------------------var-------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------------------------
     // Guarda todos los ejercicios que se cargan de la base de datos.
     var arrExercises = [Exercise]()
     // Guarda los ejercicios seleccionados, para luego crear la rutina.

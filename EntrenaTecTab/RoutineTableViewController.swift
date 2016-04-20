@@ -87,7 +87,8 @@ class RoutineTableViewController: UITableViewController, addRoutineProtocol
             return cell
         }
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("CeldaRutina", forIndexPath: indexPath) as! RoutineTableViewCell
+        let cell =
+            tableView.dequeueReusableCellWithIdentifier("CeldaRutina", forIndexPath: indexPath) as! RoutineTableViewCell
 
         cell.outletEjercicio.text = self.listExercises[indexPath.row].strName.uppercaseString
         cell.outletSubtitulo.text = self.listExercises[indexPath.row].strMuscleGroup.uppercaseString
@@ -109,8 +110,12 @@ class RoutineTableViewController: UITableViewController, addRoutineProtocol
     //------------------------------------------------------------------------------------------------------------------
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        let view = segue.destinationViewController as! AddTableViewController
+        if segue.identifier == "addRoutineSegue"
+        {
+            let view = segue.destinationViewController as! AddTableViewController
+            
+            view.delegado = self
+        }
         
-        view.delegado = self
     }
 }

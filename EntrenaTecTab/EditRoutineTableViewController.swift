@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class EditRoutineTableViewController: UITableViewController
 {
+    var dicSelectedExercises = [String: Exercise]()
+    
     //------------------------------------------------------------------------------------------------------------------
     @IBOutlet weak var actEditDone: UIBarButtonItem!
     
