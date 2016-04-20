@@ -11,11 +11,16 @@ import RealmSwift
 
 class LoginViewController: UIViewController
 {
+    //------------------------------------------------------------------------------------------------------------------
     @IBOutlet weak var outletMatritucla: UITextField!
     
+    //------------------------------------------------------------------------------------------------------------------
     @IBAction func actionLogIn(sender: UIButton)
     {
-        let strMatricula = outletMatritucla.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        // Valida que la matricula sea la correcta y presenta el view controller correspondiente.
+        
+        let strMatricula =
+            outletMatritucla.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
         if strMatricula != ""
         {
@@ -40,25 +45,15 @@ class LoginViewController: UIViewController
         }
     }
     
+    //------------------------------------------------------------------------------------------------------------------
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
-
+    
+    //------------------------------------------------------------------------------------------------------------------
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

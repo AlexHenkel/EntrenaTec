@@ -9,24 +9,29 @@
 import UIKit
 import RealmSwift
 
-class RoutineTableViewController: UITableViewController
+class RoutineTableViewController: UITableViewController, addRoutineProtocol
 {
-    var listExercises = List<Exercise>()
+    //------------------------------------------------------------------------------------------------------------------
+    var listExercises = [Exercise]()
     
-    @IBAction func swtchRutina(sender: AnyObject)
-    {
-        
-    }
+    //------------------------------------------------------------------------------------------------------------------
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        // Cambia el titulo del View.
         let today = NSDate()
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd/MM/yy"
         let date = dateFormatter.stringFromDate(today)
         self.title = "Rutina \(date)"
         
+        self.loadData()
+    }
+    
+    func loadData()
+    {
+        // Busca si el usuario tiene una rutina activa y la carga.
         let defaults = NSUserDefaults.standardUserDefaults()
         let user = defaults.stringForKey("studentId")!
         
@@ -37,33 +42,34 @@ class RoutineTableViewController: UITableViewController
         if student != nil
         {
             let routines = student!.routines
+            print(routines)
             let activeRoutine = routines.filter("boolCompleted == %@", false).first
             if activeRoutine != nil
             {
-                self.listExercises = (activeRoutine?.exercises)!
+                self.listExercises = (activeRoutine?.exercises)!.sort({ $0.strMuscleGroup < $1.strMuscleGroup })
             }
         }
-        
-
     }
 
+    //------------------------------------------------------------------------------------------------------------------
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    //==================================================================================================================
+    // MARK: - Table view
 
-    // MARK: - Table view data source
-
+    //------------------------------------------------------------------------------------------------------------------
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
+    //------------------------------------------------------------------------------------------------------------------
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        // #warning Incomplete implementation, return the number of rows
+        // Si no hay ejercicios regresa 0 y si si hay agrega uno que es el boton de completado.
         if self.listExercises.count == 0
         {
             return 0
@@ -71,7 +77,8 @@ class RoutineTableViewController: UITableViewController
         
         return self.listExercises.count + 1
     }
-
+    
+    //------------------------------------------------------------------------------------------------------------------
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         if indexPath.row == self.listExercises.count
@@ -80,57 +87,30 @@ class RoutineTableViewController: UITableViewController
             return cell
         }
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("celdaRutina", forIndexPath: indexPath) as! RoutineTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("CeldaRutina", forIndexPath: indexPath) as! RoutineTableViewCell
 
-        cell.outletEjercicio.text = self.listExercises[indexPath.row].strName
-        cell.outletSubtitulo.text = self.listExercises[indexPath.row].strMuscleGroup
+        cell.outletEjercicio.text = self.listExercises[indexPath.row].strName.uppercaseString
+        cell.outletSubtitulo.text = self.listExercises[indexPath.row].strMuscleGroup.uppercaseString
 
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    //==================================================================================================================
+    // MARK: - Protocolo
+    
+    //------------------------------------------------------------------------------------------------------------------
+    func popView()
+    {
+        self.loadData()
+        self.tableView.reloadData()
+        navigationController?.popViewControllerAnimated(true)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    //------------------------------------------------------------------------------------------------------------------
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        let view = segue.destinationViewController as! AddTableViewController
+        
+        view.delegado = self
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
