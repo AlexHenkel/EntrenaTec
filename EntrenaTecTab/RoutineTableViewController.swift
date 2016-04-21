@@ -13,8 +13,14 @@ class RoutineTableViewController: UITableViewController
 {
     var listExercises = List<Exercise>()
     
+    @IBOutlet weak var outletBarra: UINavigationItem!
+    @IBOutlet weak var outletEdit: UIBarButtonItem!
     @IBAction func swtchRutina(sender: AnyObject)
     {
+        
+    }
+
+    @IBAction func actionCompletar(sender: AnyObject) {
         
     }
     override func viewDidLoad()

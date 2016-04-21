@@ -15,6 +15,7 @@ class ExerciseViewController: UIViewController {
     @IBOutlet weak var outReps: UILabel!
     @IBOutlet weak var outGrupo: UILabel!
     
+    @IBOutlet weak var outletCompletado: UIButton!
     @IBAction func actCompletado(sender: UIButton) {
     }
     override func viewDidLoad() {
