@@ -9,11 +9,15 @@
 import UIKit
 import RealmSwift
 
-class RoutineTableViewController: UITableViewController, addRoutineProtocol
+class RoutineTableViewController: UITableViewController, addRoutineProtocol, ExerciseProtocol
 {
     //------------------------------------------------------------------------------------------------------------------
     var listExercises = [Exercise]()
     
+    @IBAction func CompleteAction()
+    {
+        print("Complete!")
+    }
     //------------------------------------------------------------------------------------------------------------------
     override func viewDidLoad()
     {
@@ -92,6 +96,14 @@ class RoutineTableViewController: UITableViewController, addRoutineProtocol
 
         cell.outletEjercicio.text = self.listExercises[indexPath.row].strName.uppercaseString
         cell.outletSubtitulo.text = self.listExercises[indexPath.row].strMuscleGroup.uppercaseString
+        if self.listExercises[indexPath.row].boolCompletado
+        {
+            cell.accessoryType = .Checkmark
+        }
+        else
+        {
+            cell.accessoryType = .None
+        }
 
         return cell
     }
@@ -122,6 +134,7 @@ class RoutineTableViewController: UITableViewController, addRoutineProtocol
             let view = segue.destinationViewController as! ExerciseViewController
             let index = self.tableView.indexPathForSelectedRow?.row
             view.exerciseToShow = self.listExercises[index!]
+            view.delegado = self
         }
     }
 }

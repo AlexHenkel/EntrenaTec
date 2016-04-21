@@ -9,6 +9,12 @@
 import UIKit
 import RealmSwift
 
+protocol ExerciseProtocol
+{
+    func popView()
+}
+
+
 class ExerciseViewController: UIViewController
 {
     //------------------------------------------------------------------------------------------------------------------
@@ -18,11 +24,35 @@ class ExerciseViewController: UIViewController
     @IBOutlet weak var outGrupo: UILabel!
     
     var exerciseToShow: Exercise!
+    var delegado: ExerciseProtocol!
     
     //------------------------------------------------------------------------------------------------------------------
     @IBAction func actCompletado(sender: UIButton)
     {
+        // Busca si el usuario tiene una rutina activa y la carga.
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let user = defaults.stringForKey("studentId")!
         
+        let realm = try! Realm()
+        
+        let student = realm.objects(User).filter("strStudentID == %@", user).first
+        
+        if student != nil
+        {
+            let routines = student!.routines
+            print(routines)
+            let activeRoutine = routines.filter("boolCompleted == %@", false).first
+            if activeRoutine != nil
+            {
+                let strId = self.exerciseToShow.strExerciseID
+                let exercise = (activeRoutine?.exercises)!.filter("strExerciseID == %@", strId).first
+                try! realm.write
+                {
+                    exercise!.boolCompletado = true
+                }
+                self.delegado.popView()
+            }
+        }
     }
     
     //------------------------------------------------------------------------------------------------------------------

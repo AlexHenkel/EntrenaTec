@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         // Por cada elemento del NSArray, crea un objeto de tipo Exercise y lo guarda en Realm.
         for exercise in arrExercises
         {
-            let exerciseToAdd = Exercise()
+            let exerciseToAdd = ExercisesList()
             exerciseToAdd.strExerciseID = String(exercise.objectForKey("ExerciseId")!)
             exerciseToAdd.strName = String(exercise.objectForKey("Name")!)
             exerciseToAdd.strDescription = String(exercise.objectForKey("Description")!)

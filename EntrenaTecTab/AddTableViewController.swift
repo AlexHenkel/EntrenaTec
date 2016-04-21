@@ -19,9 +19,9 @@ class AddTableViewController: UITableViewController
 {
     //------------------------------------------------------------------------------------------------------------------
     // Guarda todos los ejercicios que se cargan de la base de datos.
-    var arrExercises = [Exercise]()
+    var arrExercises = [ExercisesList]()
     // Guarda los ejercicios seleccionados, para luego crear la rutina.
-    var dicSelectedExercises = [String: Exercise]()
+    var dicSelectedExercises = [String: ExercisesList]()
     var delegado: addRoutineProtocol!
     
     //------------------------------------------------------------------------------------------------------------------
@@ -58,7 +58,14 @@ class AddTableViewController: UITableViewController
             
             for exercise in dicSelectedExercises.values
             {
-                arrExercises.append(exercise)
+                let exerciseToAdd = Exercise()
+                exerciseToAdd.strExerciseID = exercise.strExerciseID
+                exerciseToAdd.strName = exercise.strName
+                exerciseToAdd.strDescription = exercise.strDescription
+                exerciseToAdd.strImageName = exercise.strImageName
+                exerciseToAdd.strMuscleGroup = exercise.strMuscleGroup
+                
+                arrExercises.append(exerciseToAdd)
             }
             
             newRoutine.exercises.appendContentsOf(arrExercises)
@@ -81,7 +88,7 @@ class AddTableViewController: UITableViewController
         // Carga los datos de los ejercicios, los ordena por grupo muscular y lo guarda en un arreglo.
         let realm = try! Realm()
         
-        let exercises = realm.objects(Exercise).sorted("strMuscleGroup")
+        let exercises = realm.objects(ExercisesList).sorted("strMuscleGroup")
         
         self.arrExercises = Array(exercises)
     }
