@@ -11,13 +11,14 @@ import RealmSwift
 
 class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
-    
+    //------------------------------------------------------------------------------------------------------------------
     @IBOutlet weak var outletPicker: UIPickerView!
     @IBOutlet weak var tfNombre: UITextField!
     @IBOutlet weak var tfCooper: UITextField!
     @IBOutlet weak var tfLagartijas: UITextField!
     @IBOutlet weak var tfFlex: UITextField!
     @IBOutlet weak var tfAbs: UITextField!
+    @IBOutlet weak var tapCancelar: UIButton!
     
     var strNombre: String!
     var strCooper: String!
@@ -25,48 +26,19 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var strFlex: String!
     var strAbs: String!
     var strLevel: String!
-    
-    @IBOutlet weak var tapCancelar: UIButton!
     var pickerData: [String] = [String]()
     
-    
-    @IBAction func tapGuardas(sender: AnyObject)
+    //------------------------------------------------------------------------------------------------------------------
+    override func didReceiveMemoryWarning()
     {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let user = defaults.stringForKey("studentId")!
-        
-        let realm = try! Realm()
-        
-        let student = realm.objects(User).filter("strStudentID == %@", user).first
-        
-        try! realm.write
-        {
-            student!.strLevel = self.pickerData[outletPicker.selectedRowInComponent(0)]
-        }
-        
-        // Saca los datos del outlet quitandole blancos en exceso.
-        let strNombre = tfNombre.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let strFlex = tfFlex.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let strCooper = tfCooper.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let strLagartijas = tfLagartijas.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let strAbs = tfAbs.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        
-        if strNombre != "" && strFlex != "" && strCooper != "" && strLagartijas != "" && strAbs != ""
-        {
-            try! realm.write
-            {
-                student!.strName = strNombre
-                student!.intFlex1 = Int(strFlex)!
-                student!.doubleCooper1 = Double(strCooper)!
-                student!.intPushups1 = Int(strLagartijas)!
-                student!.intAbs1 = Int(strAbs)!
-            }
-            
-            let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("TabBar")
-            self.presentViewController(viewController, animated: true, completion: nil)
-        }
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
+    //==================================================================================================================
+    // MARK: - Load Profile
+    
+    //------------------------------------------------------------------------------------------------------------------
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -81,6 +53,7 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.loadData()
     }
     
+    //------------------------------------------------------------------------------------------------------------------
     func loadData()
     {
         //Carga los datos actuales
@@ -104,37 +77,70 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         }
     }
     
-    override func didReceiveMemoryWarning()
+    //==================================================================================================================
+    // MARK: - Save Changes
+    
+    //------------------------------------------------------------------------------------------------------------------
+    @IBAction func tapGuardas(sender: AnyObject)
     {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let user = defaults.stringForKey("studentId")!
+        
+        let realm = try! Realm()
+        
+        let student = realm.objects(User).filter("strStudentID == %@", user).first
+        
+        try! realm.write
+        {
+            student!.strLevel = self.pickerData[outletPicker.selectedRowInComponent(0)]
+        }
+        
+        // Saca los datos del outlet quitandole blancos en exceso.
+        let strNombre =
+            tfNombre.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strFlex =
+            tfFlex.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strCooper =
+            tfCooper.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strLagartijas =
+            tfLagartijas.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strAbs = tfAbs.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        
+        if strNombre != "" && strFlex != "" && strCooper != "" && strLagartijas != "" && strAbs != ""
+        {
+            try! realm.write
+            {
+                student!.strName = strNombre
+                student!.intFlex1 = Int(strFlex)!
+                student!.doubleCooper1 = Double(strCooper)!
+                student!.intPushups1 = Int(strLagartijas)!
+                student!.intAbs1 = Int(strAbs)!
+            }
+            
+            let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("TabBar")
+            self.presentViewController(viewController, animated: true, completion: nil)
+        }
     }
     
-    // The number of columns of data
+    //==================================================================================================================
+    // MARK: - Level Picker
+    
+    //------------------------------------------------------------------------------------------------------------------
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
     {
         return 1
     }
     
-    // The number of rows of data
+    //------------------------------------------------------------------------------------------------------------------
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {
         return pickerData.count
     }
     
-    // The data to return for the row and component (column) that's being passed in
+    //------------------------------------------------------------------------------------------------------------------
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {
         return pickerData[row]
-    }
-    
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
-        
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
 }

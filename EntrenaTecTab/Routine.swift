@@ -11,12 +11,10 @@ import RealmSwift
 
 class Routine: Object
 {
-    dynamic var strRoutineID = ""
-    dynamic var strLevel = ""
+    dynamic var intRoutineID = 0
     dynamic var boolCompleted = false
     dynamic var dateStart = NSDate()
     dynamic var dateLast: NSDate? = nil
     dynamic var dateEnd: NSDate? = nil
-    dynamic var intCompleted = 0
     let exercises = List<Exercise>()
 }
