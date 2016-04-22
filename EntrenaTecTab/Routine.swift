@@ -14,6 +14,7 @@ class Routine: Object
     dynamic var intRoutineID = 0
     dynamic var boolCompleted = false
     dynamic var dateStart = NSDate()
+    dynamic var dateLast: NSDate? = nil
     dynamic var dateEnd: NSDate? = nil
     let exercises = List<Exercise>()
 }

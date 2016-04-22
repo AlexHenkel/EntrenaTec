@@ -22,6 +22,8 @@ class ExerciseViewController: UIViewController
     @IBOutlet weak var outMaquina: UIImageView!
     @IBOutlet weak var outReps: UILabel!
     @IBOutlet weak var outGrupo: UILabel!
+    @IBOutlet weak var outletCompletado: UIButton!
+    
     
     var exerciseToShow: Exercise!
     var delegado: ExerciseProtocol!
@@ -47,12 +49,13 @@ class ExerciseViewController: UIViewController
                 let strId = self.exerciseToShow.strExerciseID
                 let exercise = (activeRoutine?.exercises)!.filter("strExerciseID == %@", strId).first
                 try! realm.write
-                {
-                    exercise!.boolCompletado = true
+                    {
+                        exercise!.boolCompletado = true
                 }
                 self.delegado.popView()
             }
         }
+
     }
     
     //------------------------------------------------------------------------------------------------------------------

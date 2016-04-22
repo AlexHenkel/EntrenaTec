@@ -13,12 +13,14 @@ class RoutineTableViewController: UITableViewController, addRoutineProtocol, Exe
 {
     //------------------------------------------------------------------------------------------------------------------
     var listExercises = [Exercise]()
-    
-    @IBAction func CompleteAction()
-    {
-        print("Complete!")
-    }
+
+    @IBOutlet weak var outletBarra: UINavigationItem!
+    @IBOutlet weak var outletEdit: UIBarButtonItem!
+   
     //------------------------------------------------------------------------------------------------------------------
+    @IBAction func actionCompletar(sender: AnyObject) {
+        
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
