@@ -15,6 +15,7 @@ class Routine: Object
     dynamic var strLevel = ""
     dynamic var boolCompleted = false
     dynamic var dateStart = NSDate()
+    dynamic var dateLast: NSDate? = nil
     dynamic var dateEnd: NSDate? = nil
     dynamic var intCompleted = 0
     let exercises = List<Exercise>()
