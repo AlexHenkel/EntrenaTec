@@ -11,7 +11,7 @@ import RealmSwift
 
 class ProfileViewController: UIViewController
 {
-
+    //------------------------------------------------------------------------------------------------------------------
     @IBOutlet weak var outletNombre: UILabel!
     @IBOutlet weak var outletNivel: UILabel!
     @IBOutlet weak var outletImagen: UIImageView!
@@ -20,6 +20,17 @@ class ProfileViewController: UIViewController
     @IBOutlet weak var outletLagartijasPerfil: UILabel!
     @IBOutlet weak var outletAbsPerfil: UILabel!
     
+    
+    //------------------------------------------------------------------------------------------------------------------
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+    }
+    
+    //==================================================================================================================
+    // MARK: - Show Profile Data
+    
+    //------------------------------------------------------------------------------------------------------------------
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -28,9 +39,10 @@ class ProfileViewController: UIViewController
         self.LoadProfile()
     }
     
-    
+    //------------------------------------------------------------------------------------------------------------------
     func LoadProfile()
     {
+        // Carga los datos del usuario de la Base de Datos.
         let defaults = NSUserDefaults.standardUserDefaults()
         let user = defaults.stringForKey("studentId")!
         
@@ -49,28 +61,24 @@ class ProfileViewController: UIViewController
         }
     }
     
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    //==================================================================================================================
+    // MARK: - Navigation
     
+    //------------------------------------------------------------------------------------------------------------------
     @IBAction func unwind(sender: UIStoryboardSegue)
     {
-        
+        // Metodo que se ejecuta para regresar de la vista de Edit Profile.
     }
     
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-     {
+    //------------------------------------------------------------------------------------------------------------------
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
         let view = segue.destinationViewController as! EditViewController
-        view.strLevel = self.outletNivel.text
+        view.strLevel = self.outletNivel.text?.capitalizedString
         view.strNombre = self.outletNombre.text
         view.strCooper = self.outletCooperPerfil.text
         view.strFlex = self.outletFlexPerfil.text
         view.strLagartijas = self.outletLagartijasPerfil.text
         view.strAbs = self.outletAbsPerfil.text
-     }
+    }
 }

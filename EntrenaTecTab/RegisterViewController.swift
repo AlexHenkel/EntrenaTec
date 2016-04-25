@@ -11,22 +11,31 @@ import RealmSwift
 
 class RegisterViewController: UIViewController
 {
+    //------------------------------------------------------------------------------------------------------------------
     @IBOutlet weak var outletNombre: UITextField!
     @IBOutlet weak var outletFlex: UITextField!
     @IBOutlet weak var outletCooper: UITextField!
     @IBOutlet weak var outletLagartijas: UITextField!
     @IBOutlet weak var outletAbs: UITextField!
     
+    //------------------------------------------------------------------------------------------------------------------
     @IBAction func confirmarDatos(sender: UIButton)
     {
+        // Valida los datos de los Outlets, Guarda al nuevo usuario en la BD y presenta el view controller.
         
         // Saca los datos del outlet quitandole blancos en exceso.
-        let strNombre = outletNombre.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let strFlex = outletFlex.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let strCooper = outletCooper.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let strLagartijas = outletLagartijas.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let strAbs = outletAbs.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strNombre =
+            outletNombre.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strFlex =
+            outletFlex.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strCooper =
+            outletCooper.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strLagartijas =
+            outletLagartijas.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let strAbs =
+            outletAbs.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
+        // Valida los datos y guarda al usuario.
         if strNombre != "" && strFlex != "" && strCooper != "" && strLagartijas != "" && strAbs != ""
         {
             let defaults = NSUserDefaults.standardUserDefaults()
@@ -54,28 +63,16 @@ class RegisterViewController: UIViewController
         }
     }
     
+    //------------------------------------------------------------------------------------------------------------------
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
 
+    //------------------------------------------------------------------------------------------------------------------
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
