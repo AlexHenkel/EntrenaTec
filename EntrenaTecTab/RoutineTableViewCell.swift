@@ -15,6 +15,9 @@ class RoutineTableViewCell: UITableViewCell
     @IBOutlet weak var outletEjercicio: UILabel!
     @IBOutlet weak var outletSubtitulo: UILabel!
     
+    var originalCenter = CGPoint()
+    var deleteOnDragRelease = false
+    
     //------------------------------------------------------------------------------------------------------------------
     override func awakeFromNib()
     {
