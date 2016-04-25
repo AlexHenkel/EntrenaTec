@@ -51,6 +51,7 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         pickerData = ["Principiante", "Intermedio", "Avanzado"]
         
         self.loadData()
+        self.hideKeyboardWhenTappedAround()
     }
     
     //------------------------------------------------------------------------------------------------------------------

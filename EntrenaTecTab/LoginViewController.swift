@@ -9,6 +9,21 @@
 import UIKit
 import RealmSwift
 
+extension UIViewController
+{
+    func hideKeyboardWhenTappedAround()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+}
+
+
 class LoginViewController: UIViewController
 {
     //------------------------------------------------------------------------------------------------------------------
@@ -49,6 +64,7 @@ class LoginViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
     }
     
     //------------------------------------------------------------------------------------------------------------------

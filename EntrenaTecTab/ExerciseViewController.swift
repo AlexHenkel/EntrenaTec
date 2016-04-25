@@ -9,12 +9,6 @@
 import UIKit
 import RealmSwift
 
-protocol ExerciseProtocol
-{
-    func popView()
-}
-
-
 class ExerciseViewController: UIViewController
 {
     //------------------------------------------------------------------------------------------------------------------
@@ -26,7 +20,7 @@ class ExerciseViewController: UIViewController
     
     
     var exerciseToShow: Exercise!
-    var delegado: ExerciseProtocol!
+    var delegado: RoutineProtocol!
     
     //------------------------------------------------------------------------------------------------------------------
     @IBAction func actCompletado(sender: UIButton)
@@ -42,7 +36,6 @@ class ExerciseViewController: UIViewController
         if student != nil
         {
             let routines = student!.routines
-            print(routines)
             let activeRoutine = routines.filter("boolCompleted == %@", false).first
             if activeRoutine != nil
             {
