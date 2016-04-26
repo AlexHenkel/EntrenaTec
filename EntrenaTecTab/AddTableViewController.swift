@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 
-protocol addRoutineProtocol
+protocol RoutineProtocol
 {
     func popView()
 }
@@ -22,7 +22,7 @@ class AddTableViewController: UITableViewController
     var arrExercises = [ExercisesList]()
     // Guarda los ejercicios seleccionados, para luego crear la rutina.
     var dicSelectedExercises = [String: ExercisesList]()
-    var delegado: addRoutineProtocol!
+    var delegado: RoutineProtocol!
     
     //------------------------------------------------------------------------------------------------------------------
     @IBAction func actAddDone(sender: AnyObject)
@@ -87,9 +87,7 @@ class AddTableViewController: UITableViewController
         
         // Carga los datos de los ejercicios, los ordena por grupo muscular y lo guarda en un arreglo.
         let realm = try! Realm()
-        
         let exercises = realm.objects(ExercisesList).sorted("strMuscleGroup")
-        
         self.arrExercises = Array(exercises)
     }
 
