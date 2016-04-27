@@ -35,9 +35,9 @@ class LoginViewController: UIViewController
         // Valida que la matricula sea la correcta y presenta el view controller correspondiente.
         
         let strMatricula =
-            outletMatritucla.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            outletMatritucla.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
         
-        if strMatricula != ""
+        if strMatricula != "" && strMatricula.hasPrefix("A0") && strMatricula.characters.count == 9
         {
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setBool(true, forKey: "isLoggedIn")

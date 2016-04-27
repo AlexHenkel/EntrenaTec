@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		5A4D8D711CBE0F110078DFA0 /* RoutineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D8D701CBE0F110078DFA0 /* RoutineTableViewCell.swift */; };
 		5A7CB39F1CBDAF1700E52568 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7CB39E1CBDAF1700E52568 /* EditViewController.swift */; };
-		5A852AD01CCE716A007EC5FA /* ExercisesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A852ACF1CCE716A007EC5FA /* ExercisesList.swift */; };
 		5AAAF09B1CC604B700377561 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAF09A1CC604B700377561 /* AddTableViewController.swift */; };
 		5AAAF09D1CC6054400377561 /* EditRoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAF09C1CC6054400377561 /* EditRoutineTableViewController.swift */; };
+		9537B1461CC87EB5000A5635 /* ExercisesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537B1451CC87EB5000A5635 /* ExercisesList.swift */; };
 		9597E9CE1CB6E2FC00351A48 /* Exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9597E9CD1CB6E2FC00351A48 /* Exercises.plist */; };
 		95B003901CB40B40002D7DA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */; };
 		95B003921CB40B51002D7DA4 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003911CB40B51002D7DA4 /* RecordsViewController.swift */; };
@@ -51,9 +51,9 @@
 /* Begin PBXFileReference section */
 		5A4D8D701CBE0F110078DFA0 /* RoutineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewCell.swift; sourceTree = "<group>"; };
 		5A7CB39E1CBDAF1700E52568 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
-		5A852ACF1CCE716A007EC5FA /* ExercisesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesList.swift; sourceTree = "<group>"; };
 		5AAAF09A1CC604B700377561 /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
 		5AAAF09C1CC6054400377561 /* EditRoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRoutineTableViewController.swift; sourceTree = "<group>"; };
+		9537B1451CC87EB5000A5635 /* ExercisesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesList.swift; sourceTree = "<group>"; };
 		9597E9CD1CB6E2FC00351A48 /* Exercises.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Exercises.plist; sourceTree = "<group>"; };
 		95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		95B003911CB40B51002D7DA4 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				95F4444C1CB3639E0012F7F6 /* User.swift */,
-				5A852ACF1CCE716A007EC5FA /* ExercisesList.swift */,
 				95F4444E1CB365250012F7F6 /* Routine.swift */,
 				95F444501CB367710012F7F6 /* Exercise.swift */,
+				9537B1451CC87EB5000A5635 /* ExercisesList.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 				TargetAttributes = {
 					FAF6BD671CABBE2800CEC0C3 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 7BW945TWYL;
+						DevelopmentTeam = F97Z4RY4JT;
 					};
 				};
 			};
@@ -253,7 +253,7 @@
 				95F444471CB362B70012F7F6 /* LoginViewController.swift in Sources */,
 				95B003921CB40B51002D7DA4 /* RecordsViewController.swift in Sources */,
 				95F444511CB367710012F7F6 /* Exercise.swift in Sources */,
-				5A852AD01CCE716A007EC5FA /* ExercisesList.swift in Sources */,
+				9537B1461CC87EB5000A5635 /* ExercisesList.swift in Sources */,
 				95B003901CB40B40002D7DA4 /* ProfileViewController.swift in Sources */,
 				95F4444F1CB365250012F7F6 /* Routine.swift in Sources */,
 				5AAAF09B1CC604B700377561 /* AddTableViewController.swift in Sources */,
@@ -385,7 +385,7 @@
 				);
 				INFOPLIST_FILE = EntrenaTecTab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -403,7 +403,7 @@
 				);
 				INFOPLIST_FILE = EntrenaTecTab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
