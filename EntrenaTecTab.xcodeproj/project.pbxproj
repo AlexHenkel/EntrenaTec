@@ -192,7 +192,7 @@
 				TargetAttributes = {
 					FAF6BD671CABBE2800CEC0C3 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = F97Z4RY4JT;
+						DevelopmentTeam = 9RA2485X9H;
 					};
 				};
 			};
@@ -385,7 +385,7 @@
 				);
 				INFOPLIST_FILE = EntrenaTecTab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTecApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -403,7 +403,7 @@
 				);
 				INFOPLIST_FILE = EntrenaTecTab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTecApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
