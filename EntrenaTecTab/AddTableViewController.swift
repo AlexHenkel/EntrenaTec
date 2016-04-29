@@ -124,8 +124,8 @@ class AddTableViewController: UITableViewController
         
         let cell = tableView.dequeueReusableCellWithIdentifier("addCell", forIndexPath: indexPath)
 
-        cell.textLabel?.text = self.arrExercises[indexPath.row].strName
-        cell.detailTextLabel?.text = self.arrExercises[indexPath.row].strMuscleGroup
+        cell.textLabel?.text = self.arrExercises[indexPath.row].strDescription.uppercaseString
+        cell.detailTextLabel?.text = self.arrExercises[indexPath.row].strMuscleGroup.uppercaseString
         
         if self.dicSelectedExercises["\(self.arrExercises[indexPath.row].strName)"] != nil
         {

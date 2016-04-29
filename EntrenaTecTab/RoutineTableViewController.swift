@@ -19,7 +19,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
     @IBOutlet weak var outletBarra: UINavigationItem!
     @IBOutlet weak var outletEdit: UIBarButtonItem!
     @IBOutlet weak var progressBar: UIProgressView!
-
+    
     
     //------------------------------------------------------------------------------------------------------------------
     // Se encarga de guardar la última fecha donde se realizó la rutina. Se ejecuta al seleccionar el boton de completar
@@ -55,7 +55,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
             alertController.addAction(actionOK)
             self.presentViewController(alertController, animated: true, completion: nil)
         }
-        
+            
         else
         {
             // Muestra un alert de no completado.
@@ -117,8 +117,8 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
             for exercise in activeRoutine!.exercises
             {
                 try! realm.write
-                {
-                    exercise.boolCompletado = false
+                    {
+                        exercise.boolCompletado = false
                 }
             }
         }
@@ -189,7 +189,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
         let cell =
             tableView.dequeueReusableCellWithIdentifier("CeldaRutina", forIndexPath: indexPath) as! RoutineTableViewCell
         
-        cell.outletEjercicio.text = self.listExercises[indexPath.row].strName.uppercaseString
+        cell.outletEjercicio.text = self.listExercises[indexPath.row].strDescription.uppercaseString
         cell.outletSubtitulo.text = self.listExercises[indexPath.row].strMuscleGroup.uppercaseString
         if self.listExercises[indexPath.row].boolCompletado
         {
@@ -227,8 +227,8 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
                 
                 let realm = try! Realm()
                 try! realm.write
-                {
-                    exercise.boolCompletado = true
+                    {
+                        exercise.boolCompletado = true
                 }
                 self.loadData()
                 self.tableView.reloadData()
