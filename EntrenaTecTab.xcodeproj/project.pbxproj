@@ -17,6 +17,8 @@
 		95B003921CB40B51002D7DA4 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003911CB40B51002D7DA4 /* RecordsViewController.swift */; };
 		95B003941CB40B82002D7DA4 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */; };
 		95B003961CB40B94002D7DA4 /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003951CB40B94002D7DA4 /* RoutineTableViewController.swift */; };
+		95B66DB41CD42DA20017CB9A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B66DB31CD42DA10017CB9A /* HistoryViewController.swift */; };
+		95B66DB61CD42E680017CB9A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B66DB51CD42E680017CB9A /* Date.swift */; };
 		95F4443D1CB361930012F7F6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F4443B1CB361930012F7F6 /* Realm.framework */; };
 		95F4443E1CB361930012F7F6 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95F4443B1CB361930012F7F6 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95F4443F1CB361930012F7F6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F4443C1CB361930012F7F6 /* RealmSwift.framework */; };
@@ -59,6 +61,8 @@
 		95B003911CB40B51002D7DA4 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 		95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		95B003951CB40B94002D7DA4 /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
+		95B66DB31CD42DA10017CB9A /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		95B66DB51CD42E680017CB9A /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		95F4443B1CB361930012F7F6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Realm.framework; sourceTree = "<group>"; };
 		95F4443C1CB361930012F7F6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../RealmSwift.framework; sourceTree = "<group>"; };
 		95F444461CB362B70012F7F6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				95B003911CB40B51002D7DA4 /* RecordsViewController.swift */,
 				95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */,
 				95B003951CB40B94002D7DA4 /* RoutineTableViewController.swift */,
+				95B66DB31CD42DA10017CB9A /* HistoryViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				95F4444E1CB365250012F7F6 /* Routine.swift */,
 				95F444501CB367710012F7F6 /* Exercise.swift */,
 				9537B1451CC87EB5000A5635 /* ExercisesList.swift */,
+				95B66DB51CD42E680017CB9A /* Date.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -192,7 +198,7 @@
 				TargetAttributes = {
 					FAF6BD671CABBE2800CEC0C3 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 9RA2485X9H;
+						DevelopmentTeam = F97Z4RY4JT;
 					};
 				};
 			};
@@ -256,7 +262,9 @@
 				9537B1461CC87EB5000A5635 /* ExercisesList.swift in Sources */,
 				95B003901CB40B40002D7DA4 /* ProfileViewController.swift in Sources */,
 				95F4444F1CB365250012F7F6 /* Routine.swift in Sources */,
+				95B66DB61CD42E680017CB9A /* Date.swift in Sources */,
 				5AAAF09B1CC604B700377561 /* AddTableViewController.swift in Sources */,
+				95B66DB41CD42DA20017CB9A /* HistoryViewController.swift in Sources */,
 				95F444491CB362CF0012F7F6 /* RegisterViewController.swift in Sources */,
 				95F4444D1CB3639E0012F7F6 /* User.swift in Sources */,
 				FAF6BD6C1CABBE2800CEC0C3 /* AppDelegate.swift in Sources */,
@@ -385,7 +393,7 @@
 				);
 				INFOPLIST_FILE = EntrenaTecTab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTecApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -403,7 +411,7 @@
 				);
 				INFOPLIST_FILE = EntrenaTecTab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTecApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
