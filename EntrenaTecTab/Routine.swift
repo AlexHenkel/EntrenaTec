@@ -17,4 +17,5 @@ class Routine: Object
     dynamic var dateLast: NSDate? = nil
     dynamic var dateEnd: NSDate? = nil
     let exercises = List<Exercise>()
+    let days = List<Date>()
 }

@@ -38,10 +38,12 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
         
         if exercisesCompleted
         {
+            let date = Date()
             let realm = try! Realm()
             try! realm.write
-                {
+            {
                     routine!.dateLast = NSDate()
+                    routine!.days.append(date)
             }
             
             self.restartRoutine()
@@ -60,7 +62,9 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
         {
             // Muestra un alert de no completado.
             let alertController = UIAlertController(title: "No se puede guardar la rutina",
-                                                    message: "La rutina de Hoy no se ha guardado, Termina todos los ejercicios", preferredStyle: .Alert)
+                                                    message: "La rutina de Hoy no se ha guardado, Termina todos los ejercicios",
+                                                    preferredStyle: .Alert)
+            
             let actionOK = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(actionOK)
             self.presentViewController(alertController, animated: true, completion: nil)
@@ -100,6 +104,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
         if student != nil
         {
             let routines = student!.routines
+            print(student)
             return routines.filter("boolCompleted == %@", false).first
         }
         return nil

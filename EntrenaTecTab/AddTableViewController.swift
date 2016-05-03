@@ -43,7 +43,7 @@ class AddTableViewController: UITableViewController
             let activeRoutine = routines.filter("boolCompleted == %@", false).first
             if activeRoutine != nil
             {
-                intId = activeRoutine!.intRoutineID
+                intId = activeRoutine!.intRoutineID + 1
                 try! realm.write
                 {
                     activeRoutine!.boolCompleted = true
