@@ -51,6 +51,7 @@ class AddTableViewController: UITableViewController
                 }
             }
             
+            // Crea la nueva rutina y la agrega al usuario.
             let newRoutine = Routine()
             newRoutine.intRoutineID = intId
             
@@ -77,6 +78,7 @@ class AddTableViewController: UITableViewController
             }
         }
         
+        // Quita la vista.
         delegado.popView()
     }
     
@@ -101,7 +103,6 @@ class AddTableViewController: UITableViewController
     // MARK: - Table view
     
     //------------------------------------------------------------------------------------------------------------------
-    // TODO: Generar una sección por cada grupo muscular.
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
         // Regresa el número de secciones que va a tener la tabla.
@@ -109,7 +110,6 @@ class AddTableViewController: UITableViewController
     }
     
     //------------------------------------------------------------------------------------------------------------------
-    // TODO: Al cambiar número de secciones cambiar número de rows.
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         // Indica a la tabla cuantos row tiene cada sección.

@@ -67,6 +67,7 @@ class RegisterViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        // Agrega el tap gesture para quitar el teclado.
         self.hideKeyboardWhenTappedAround()
     }
 

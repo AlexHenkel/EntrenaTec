@@ -12,14 +12,17 @@ import MessageUI
 
 class HistoryViewController: UIViewController, MFMailComposeViewControllerDelegate
 {
-
+    //------------------------------------------------------------------------------------------------------------------
     @IBOutlet weak var tvHistorial: UITextView!
     @IBOutlet weak var nombreAlumno: UILabel!
     @IBOutlet weak var matricula: UILabel!
     @IBOutlet weak var nivel: UILabel!
     
+    //------------------------------------------------------------------------------------------------------------------
     func cargarHistorial()
     {
+        // Carga todos los datos del alumno, todas las rutinas que ha realizado. De cada rutina pone fecha de inicio y
+        //  término, que días el alumno completo la rutina y la lista de ejercicios que tiene la rutina.
         let defaults = NSUserDefaults.standardUserDefaults()
         let user = defaults.stringForKey("studentId")!
         
@@ -72,8 +75,10 @@ class HistoryViewController: UIViewController, MFMailComposeViewControllerDelega
         }
     }
     
+    //------------------------------------------------------------------------------------------------------------------
     func textToSend() -> String
     {
+        // Genera un string parecido al del metodo cargaHistorial, pero este incluye Tags HTML para mandarlo vía email.
         let defaults = NSUserDefaults.standardUserDefaults()
         let user = defaults.stringForKey("studentId")!
         
@@ -129,34 +134,52 @@ class HistoryViewController: UIViewController, MFMailComposeViewControllerDelega
         return ""
     }
     
+    //------------------------------------------------------------------------------------------------------------------
     @IBAction func sendEmail()
     {
+        // Metodo que se encarga de mandar el mail del alumno a los entrenadores.
         if MFMailComposeViewController.canSendMail()
         {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
+            
+            let defaults = NSUserDefaults.standardUserDefaults()
+            let user = defaults.stringForKey("studentId")!
+            let dateFormatter: NSDateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            let today = dateFormatter.stringFromDate(NSDate())
+            
+            
+            mail.setSubject("Reporte \(today) - \(user)")
             mail.setToRecipients(["alexdelarosacortes@gmail.com"])
             mail.setMessageBody(self.textToSend(), isHTML: true)
             presentViewController(mail, animated: true, completion: nil)
         }
-        else
-        {
-            // show failure alert
-        }
     }
     
+    //------------------------------------------------------------------------------------------------------------------
+    // Metodo utilizado para quitar el mail composer.
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?)
     {
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    //------------------------------------------------------------------------------------------------------------------
     override func viewDidLoad()
     {
         super.viewDidLoad()
+    }
+    
+    //------------------------------------------------------------------------------------------------------------------
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(true)
         
+        // Carga los datos del historial.
         self.cargarHistorial()
     }
-
+    
+    //------------------------------------------------------------------------------------------------------------------
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

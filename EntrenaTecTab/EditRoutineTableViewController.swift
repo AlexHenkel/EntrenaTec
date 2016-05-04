@@ -20,6 +20,7 @@ class EditRoutineTableViewController: UITableViewController
     //------------------------------------------------------------------------------------------------------------------
     @IBAction func actEdit(sender: AnyObject)
     {
+        // Obtiene la rutina actual, elimina todos los ejercicios existentes y agrega los seleccionados.
         let routine = self.getActiveRoutine()
         let realm = try! Realm()
         let exercises = (routine?.exercises)!
@@ -42,10 +43,11 @@ class EditRoutineTableViewController: UITableViewController
         }
         
         try! realm.write
-            {
-                routine!.exercises.appendContentsOf(arrExercises)
+        {
+            routine!.exercises.appendContentsOf(arrExercises)
         }
         
+        // Quita la vista.
         self.delegado.popView()
     }
     

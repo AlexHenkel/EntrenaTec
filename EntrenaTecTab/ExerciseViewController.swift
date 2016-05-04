@@ -18,7 +18,6 @@ class ExerciseViewController: UIViewController
     @IBOutlet weak var outGrupo: UILabel!
     @IBOutlet weak var outletCompletado: UIButton!
     
-    
     var exerciseToShow: Exercise!
     var delegado: RoutineProtocol!
     
@@ -55,6 +54,7 @@ class ExerciseViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        // Muestra los datos del ejercicio.
         self.title = self.exerciseToShow.strName.uppercaseString
         self.outDescripcion.text = self.exerciseToShow.strDescription.uppercaseString
         self.outGrupo.text = self.exerciseToShow.strMuscleGroup.uppercaseString

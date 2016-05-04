@@ -43,14 +43,16 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     {
         super.viewDidLoad()
         
-        //Conectar Datos
+        //Conectar Datos.
         self.outletPicker.delegate = self
         self.outletPicker.dataSource = self
         
-        //Agregar Datos al Arreglo para el Picker
+        //Agregar Datos al Arreglo para el Picker.
         pickerData = ["Principiante", "Intermedio", "Avanzado"]
         
+        // Carga los datos actuales.
         self.loadData()
+        // Agrega el tap gesture para quitar el teclado.
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -92,11 +94,6 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         let student = realm.objects(User).filter("strStudentID == %@", user).first
         
-        try! realm.write
-        {
-            student!.strLevel = self.pickerData[outletPicker.selectedRowInComponent(0)]
-        }
-        
         // Saca los datos del outlet quitandole blancos en exceso.
         let strNombre =
             tfNombre.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
@@ -108,10 +105,12 @@ class EditViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             tfLagartijas.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         let strAbs = tfAbs.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
+        // Si no hay blancos, guarda los datos actualizados.
         if strNombre != "" && strFlex != "" && strCooper != "" && strLagartijas != "" && strAbs != ""
         {
             try! realm.write
             {
+                student!.strLevel = self.pickerData[outletPicker.selectedRowInComponent(0)]
                 student!.strName = strNombre
                 student!.intFlex1 = Int(strFlex)!
                 student!.doubleCooper1 = Double(strCooper)!

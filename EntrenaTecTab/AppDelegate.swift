@@ -9,6 +9,23 @@
 import UIKit
 import RealmSwift
 
+//------------------------------------------------------------------------------------------------------------------
+// Crea una extension del View controller para cargar en todos los UIViewControllers un tap Gesture recognizer
+//  para quitar el teclado.
+extension UIViewController
+{
+    func hideKeyboardWhenTappedAround()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate
 {

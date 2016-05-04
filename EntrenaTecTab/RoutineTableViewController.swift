@@ -25,6 +25,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
     // Se encarga de guardar la última fecha donde se realizó la rutina. Se ejecuta al seleccionar el boton de completar
     @IBAction func actionCompletar(sender: AnyObject)
     {
+        // Obtiene la rutina actual de la BD.
         let routine = self.getActiveRoutine()
         var exercisesCompleted = true
         
@@ -36,6 +37,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
             }
         }
         
+        // Si están completados todos los ejercicios, guarda la fecha y resetea la rutina y vuelve a cargar la vista.
         if exercisesCompleted
         {
             let date = Date()
@@ -84,6 +86,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
         let date = dateFormatter.stringFromDate(today)
         self.title = "Rutina \(date)"
         
+        // Carga la rutina.
         self.loadData()
     }
     
@@ -185,12 +188,14 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
     //------------------------------------------------------------------------------------------------------------------
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
+        // Muestra la celda de completar.
         if indexPath.row == self.listExercises.count
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("completeCell", forIndexPath: indexPath)
             return cell
         }
         
+        // Carga cada ejercicio.
         let cell =
             tableView.dequeueReusableCellWithIdentifier("CeldaRutina", forIndexPath: indexPath) as! RoutineTableViewCell
         
@@ -211,6 +216,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
     //------------------------------------------------------------------------------------------------------------------
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
+        // si es el boton de completar o si el ejercicio ya ser realizó desactiva el swipe.
         if indexPath.row == self.listExercises.count || self.listExercises[indexPath.row].boolCompletado
         {
             return false
@@ -223,7 +229,8 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) ->
         [UITableViewRowAction]?
     {
-        let editAction = UITableViewRowAction(style: .Normal, title: "Complete") {action in
+        // Crea el action de completar el ejercicio haciendo swipe.
+        let editAction = UITableViewRowAction(style: .Normal, title: "Completar") {action in
             let routine = self.getActiveRoutine()
             if routine != nil
             {
@@ -240,6 +247,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
             }
         }
         
+        // cambia el background del boton.
         editAction.backgroundColor = UIColor(red: 0.15, green: 1.0, blue: 0.7, alpha: 1.0)
         
         return [editAction]
@@ -251,6 +259,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
     //------------------------------------------------------------------------------------------------------------------
     func popView()
     {
+        // Recarga los datos de la rutina y quita la vista que está encima.
         self.loadData()
         self.tableView.reloadData()
         navigationController?.popViewControllerAnimated(true)
@@ -284,6 +293,7 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
     //------------------------------------------------------------------------------------------------------------------
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool
     {
+        // Si va a edit routine y no hay rutina activa no ejecuta el segue.
         if identifier == "editRoutineSegue"
         {
             if self.getActiveRoutine() == nil
