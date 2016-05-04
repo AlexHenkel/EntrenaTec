@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vdf-Yc-kiU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vdf-Yc-kiU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,6 +7,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Building_Typeface.ttf">
+            <string>Building-CondensedMedium</string>
             <string>Building-CondensedMedium</string>
             <string>Building-CondensedMedium</string>
             <string>Building-CondensedMedium</string>
@@ -94,7 +95,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4dy-Py-S87">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NIVEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAY-g5-TFq">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIVEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAY-g5-TFq">
                                                         <rect key="frame" x="258" y="0.0" width="45" height="32"/>
                                                         <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="32"/>
                                                         <color key="textColor" red="0.57754407051282053" green="0.57754407051282053" blue="0.57754407051282053" alpha="0.69229525859999996" colorSpace="calibratedRGB"/>
@@ -128,16 +129,16 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qzo-Di-Pa1">
                                                 <rect key="frame" x="0.0" y="28" width="560" height="70"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-gG-f5I">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-gG-f5I">
                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="70"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="COOPER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-JV-Im6">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COOPER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-JV-Im6">
                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="22"/>
                                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="22"/>
                                                                 <color key="textColor" red="0.63510037480000003" green="0.62668937830000004" blue="0.65784522249999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBF-Rl-fxN">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBF-Rl-fxN">
                                                                 <rect key="frame" x="7" y="22" width="31" height="48"/>
                                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="48"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,16 +146,16 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8fX-Xo-o3K">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8fX-Xo-o3K">
                                                         <rect key="frame" x="169" y="0.0" width="41" height="70"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="FLEX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw0-kQ-xt1">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLEX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw0-kQ-xt1">
                                                                 <rect key="frame" x="7" y="0.0" width="27" height="22"/>
                                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="22"/>
                                                                 <color key="textColor" red="0.63510037480000003" green="0.62668937830000004" blue="0.65784522249999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="130" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2al-Vb-bGu">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2al-Vb-bGu">
                                                                 <rect key="frame" x="0.0" y="22" width="41" height="48"/>
                                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="48"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -162,16 +163,16 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8PK-w3-HkH">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8PK-w3-HkH">
                                                         <rect key="frame" x="322" y="0.0" width="67" height="70"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LAGARTIJAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-HG-DvF">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAGARTIJAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-HG-DvF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="67" height="22"/>
                                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="22"/>
                                                                 <color key="textColor" red="0.63510037480000003" green="0.62668937830000004" blue="0.65784522249999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-NO-3Qb">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-NO-3Qb">
                                                                 <rect key="frame" x="18" y="22" width="31" height="48"/>
                                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="48"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,16 +180,16 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Wn-47-ajl">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Wn-47-ajl">
                                                         <rect key="frame" x="484" y="0.0" width="76" height="70"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ABDOMINALES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrn-JX-Tn1">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABDOMINALES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrn-JX-Tn1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="22"/>
                                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="22"/>
                                                                 <color key="textColor" red="0.63510037480000003" green="0.62668937830000004" blue="0.65784522249999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="67" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3af-q3-ugz">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="67" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3af-q3-ugz">
                                                                 <rect key="frame" x="23" y="22" width="30" height="48"/>
                                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="48"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -259,10 +260,10 @@
                         </progressView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CeldaRutina" rowHeight="76" id="mDI-V6-zxc" customClass="RoutineTableViewCell" customModule="EntrenaTecTab" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="94.5" width="600" height="76"/>
+                                <rect key="frame" x="0.0" y="95" width="600" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mDI-V6-zxc" id="gTu-Jy-dmN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EJERCICIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0d-z0-uA9">
@@ -294,10 +295,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="completeCell" id="cgQ-kn-tRp">
-                                <rect key="frame" x="0.0" y="170.5" width="600" height="76"/>
+                                <rect key="frame" x="0.0" y="171" width="600" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cgQ-kn-tRp" id="1BV-S1-9kk">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQW-ch-eD8">
@@ -364,55 +365,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALUMNO:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-Dj-yGV">
-                                <rect key="frame" x="20" y="38" width="78" height="41"/>
-                                <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="26"/>
-                                <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALUMNO:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unQ-wU-5MA">
-                                <rect key="frame" x="139" y="38" width="441" height="41"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YH-9p-dXB">
+                                <rect key="frame" x="20" y="117" width="560" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATRICULA:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-5A-6gr">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="87" id="enP-JT-2K4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
+                                        <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALUMNO:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDk-XX-k0e">
+                                        <rect key="frame" x="87" y="0.0" width="473" height="27"/>
+                                        <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
+                                        <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.24652478450000001" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXs-cX-k93">
+                                <rect key="frame" x="20" y="158" width="560" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIVEL:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-cV-obQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="khd-sK-mDn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
+                                        <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALUMNO:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBb-f7-axX">
+                                        <rect key="frame" x="43" y="0.0" width="517" height="27"/>
+                                        <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
+                                        <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.24652478450000001" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUTINAS:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiU-lL-Vqz">
+                                <rect key="frame" x="20" y="199" width="560" height="27"/>
                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
-                                <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.24652478450000001" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALUMNO:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBb-f7-axX">
-                                <rect key="frame" x="139" y="136" width="441" height="41"/>
-                                <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
-                                <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.24652478450000001" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALUMNO:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDk-XX-k0e">
-                                <rect key="frame" x="139" y="87" width="441" height="41"/>
-                                <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
-                                <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.24652478450000001" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MATRICULA:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-5A-6gr">
-                                <rect key="frame" x="20" y="87" width="78" height="41"/>
-                                <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="26"/>
                                 <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIVEL:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-cV-obQ">
-                                <rect key="frame" x="20" y="136" width="78" height="41"/>
-                                <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="26"/>
-                                <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RUTINAS:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiU-lL-Vqz">
-                                <rect key="frame" x="20" y="185" width="78" height="41"/>
-                                <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="26"/>
-                                <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ED-n3-6vZ">
-                                <rect key="frame" x="20" y="221" width="560" height="247"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dZ-ae-ovX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dZ-ae-ovX">
                                 <rect key="frame" x="0.0" y="481" width="600" height="70"/>
                                 <color key="backgroundColor" red="0.63510037480000003" green="0.62668937830000004" blue="0.65784522249999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -426,8 +425,63 @@
                                     <action selector="sendEmail" destination="4ni-Ik-enP" eventType="touchUpInside" id="5Oe-ep-bR0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPORTE:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDi-3l-lhP">
+                                <rect key="frame" x="241" y="20" width="118" height="48"/>
+                                <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="48"/>
+                                <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ED-n3-6vZ">
+                                <rect key="frame" x="20" y="226" width="560" height="250"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDN-tB-dTu">
+                                <rect key="frame" x="20" y="76" width="560" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALUMNO:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-Dj-yGV">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="63" id="eMG-bx-k2t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
+                                        <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALUMNO:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unQ-wU-5MA">
+                                        <rect key="frame" x="63" y="0.0" width="497" height="27"/>
+                                        <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="27"/>
+                                        <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.24652478450000001" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9YH-9p-dXB" firstAttribute="leading" secondItem="Lws-JH-V7N" secondAttribute="leadingMargin" id="9rn-vx-dnF"/>
+                            <constraint firstItem="EiU-lL-Vqz" firstAttribute="top" secondItem="pXs-cX-k93" secondAttribute="bottom" constant="14" id="E4K-N0-Lfq"/>
+                            <constraint firstItem="PDN-tB-dTu" firstAttribute="leading" secondItem="Lws-JH-V7N" secondAttribute="leadingMargin" id="Fex-10-jFT"/>
+                            <constraint firstItem="9dZ-ae-ovX" firstAttribute="top" secondItem="4ED-n3-6vZ" secondAttribute="bottom" constant="5" id="JH2-94-FNy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PDN-tB-dTu" secondAttribute="trailing" id="JQ2-rt-UF1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9YH-9p-dXB" secondAttribute="trailing" id="Ltm-J5-vcd"/>
+                            <constraint firstItem="64A-DP-olj" firstAttribute="top" secondItem="9dZ-ae-ovX" secondAttribute="bottom" id="Pdc-Wa-mpj"/>
+                            <constraint firstItem="pXs-cX-k93" firstAttribute="leading" secondItem="Lws-JH-V7N" secondAttribute="leadingMargin" id="QYe-nI-ZRd"/>
+                            <constraint firstItem="9dZ-ae-ovX" firstAttribute="leading" secondItem="Lws-JH-V7N" secondAttribute="leading" id="SPi-4k-f3I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EiU-lL-Vqz" secondAttribute="trailing" id="V1J-Cr-N2I"/>
+                            <constraint firstAttribute="trailing" secondItem="9dZ-ae-ovX" secondAttribute="trailing" id="Va4-0L-ebs"/>
+                            <constraint firstItem="BDi-3l-lhP" firstAttribute="centerX" secondItem="Lws-JH-V7N" secondAttribute="centerX" id="cQa-TP-Cli"/>
+                            <constraint firstItem="4ED-n3-6vZ" firstAttribute="top" secondItem="EiU-lL-Vqz" secondAttribute="bottom" id="cc5-sd-wjM"/>
+                            <constraint firstItem="EiU-lL-Vqz" firstAttribute="leading" secondItem="Lws-JH-V7N" secondAttribute="leadingMargin" id="deY-cu-CF5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pXs-cX-k93" secondAttribute="trailing" id="eYM-a1-9tM"/>
+                            <constraint firstItem="PDN-tB-dTu" firstAttribute="top" secondItem="BDi-3l-lhP" secondAttribute="bottom" constant="8" id="fUK-AY-S8s"/>
+                            <constraint firstItem="9YH-9p-dXB" firstAttribute="top" secondItem="PDN-tB-dTu" secondAttribute="bottom" constant="14" id="kW1-ne-KxK"/>
+                            <constraint firstItem="pXs-cX-k93" firstAttribute="top" secondItem="9YH-9p-dXB" secondAttribute="bottom" constant="14" id="tNd-tP-ccw"/>
+                            <constraint firstItem="BDi-3l-lhP" firstAttribute="top" secondItem="T3A-Jy-25g" secondAttribute="bottom" id="vAG-oC-L0R"/>
+                            <constraint firstItem="4ED-n3-6vZ" firstAttribute="trailing" secondItem="Lws-JH-V7N" secondAttribute="trailingMargin" id="vHJ-xa-vX3"/>
+                            <constraint firstItem="4ED-n3-6vZ" firstAttribute="leading" secondItem="Lws-JH-V7N" secondAttribute="leadingMargin" id="zqF-Ue-ke3"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="7kc-VR-08E"/>
                     <connections>
@@ -454,11 +508,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v88-ma-rde" id="Qki-Qk-ODj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="EJERCICIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I45-ru-Ns9">
-                                            <rect key="frame" x="15" y="15" width="71.5" height="28"/>
+                                            <rect key="frame" x="15" y="15" width="72" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="28"/>
                                             <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -506,18 +560,18 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XKP-0j-WOc" id="Zp0-2B-hhC">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="EJERCICIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ue7-Ei-gqJ">
-                                            <rect key="frame" x="15" y="15" width="71.5" height="28"/>
+                                            <rect key="frame" x="15" y="15" width="72" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="28"/>
                                             <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="SUBTITULO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GRW-p4-sEH">
-                                            <rect key="frame" x="15" y="43" width="49.5" height="18"/>
+                                            <rect key="frame" x="15" y="43" width="50" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -586,7 +640,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZvE-cO-pQo">
                                         <rect key="frame" x="0.0" y="0.0" width="242" height="56"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="REPETICIONES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-D5-orD">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPETICIONES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-D5-orD">
                                                 <rect key="frame" x="72" y="0.0" width="99" height="28"/>
                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="28"/>
                                                 <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -603,13 +657,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dLG-ZQ-Klb">
                                         <rect key="frame" x="242" y="0.0" width="318" height="56"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GRUPO MUSCULAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBH-x9-MeS">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRUPO MUSCULAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBH-x9-MeS">
                                                 <rect key="frame" x="94" y="0.0" width="130" height="28"/>
                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="28"/>
                                                 <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PECHO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz4-tN-M9s">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PECHO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz4-tN-M9s">
                                                 <rect key="frame" x="136" y="28" width="47" height="28"/>
                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="28"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -682,7 +736,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="2US-H2-J0f">
                                 <rect key="frame" x="20" y="80" width="560" height="281"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b1P-gZ-ovw">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1P-gZ-ovw">
                                         <rect key="frame" x="167" y="0.0" width="227" height="71"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTRENA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhu-0o-8yt">
@@ -691,7 +745,7 @@
                                                 <color key="textColor" red="0.99711887909999997" green="1" blue="0.95653037490000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdq-Sw-mfn">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdq-Sw-mfn">
                                                 <rect key="frame" x="160" y="0.0" width="67" height="71"/>
                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="71"/>
                                                 <color key="textColor" red="0.14901960780000001" green="1" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1010,8 +1064,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zj3-ej-piq">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="112"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NIVEL:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qO-tk-Sbe">
-                                                <rect key="frame" x="256" y="0.0" width="50" height="32"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIVEL:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qO-tk-Sbe">
+                                                <rect key="frame" x="255" y="0.0" width="50" height="32"/>
                                                 <fontDescription key="fontDescription" name="Building-CondensedMedium" family="Building" pointSize="32"/>
                                                 <color key="textColor" red="0.57754407050000001" green="0.57754407050000001" blue="0.57754407050000001" alpha="0.69229525859999996" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1035,6 +1089,7 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVn-S5-q9o">
                                                 <rect key="frame" x="0.0" y="27" width="560" height="30"/>
+                                                <color key="backgroundColor" red="0.57754407050000001" green="0.57754407050000001" blue="0.57754407050000001" alpha="0.69229525859999996" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1066,6 +1121,8 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M7l-6U-Lcv">
                                                                         <rect key="frame" x="0.0" y="27" width="270" height="30"/>
+                                                                        <color key="backgroundColor" red="0.57754407050000001" green="0.57754407050000001" blue="0.57754407050000001" alpha="0.69229525859999996" colorSpace="calibratedRGB"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                     </textField>
@@ -1082,6 +1139,7 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wDX-F4-wEo">
                                                                         <rect key="frame" x="0.0" y="27" width="270" height="30"/>
+                                                                        <color key="backgroundColor" red="0.57754407050000001" green="0.57754407050000001" blue="0.57754407050000001" alpha="0.69229525859999996" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
@@ -1103,6 +1161,7 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wkE-NL-Nnl">
                                                                         <rect key="frame" x="0.0" y="27" width="270" height="30"/>
+                                                                        <color key="backgroundColor" red="0.57754407050000001" green="0.57754407050000001" blue="0.57754407050000001" alpha="0.69229525859999996" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
@@ -1119,6 +1178,7 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Id0-bl-hxo">
                                                                         <rect key="frame" x="0.0" y="27" width="270" height="30"/>
+                                                                        <color key="backgroundColor" red="0.57754407050000001" green="0.57754407050000001" blue="0.57754407050000001" alpha="0.69229525859999996" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
