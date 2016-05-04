@@ -107,7 +107,6 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
         if student != nil
         {
             let routines = student!.routines
-            print(student)
             return routines.filter("boolCompleted == %@", false).first
         }
         return nil
