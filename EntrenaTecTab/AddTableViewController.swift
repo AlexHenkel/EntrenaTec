@@ -37,7 +37,7 @@ class AddTableViewController: UITableViewController
         
         var intId = 0
         
-        if student != nil
+        if student != nil && dicSelectedExercises.count > 0
         {
             let routines = student!.routines
             let activeRoutine = routines.filter("boolCompleted == %@", false).first
