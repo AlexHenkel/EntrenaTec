@@ -27,51 +27,25 @@ class RoutineTableViewController: UITableViewController, RoutineProtocol
     {
         // Obtiene la rutina actual de la BD.
         let routine = self.getActiveRoutine()
-        var exercisesCompleted = true
         
-        for exercise in (routine?.exercises)!
-        {
-            if !exercise.boolCompletado
+        let date = Date()
+        let realm = try! Realm()
+        try! realm.write
             {
-                exercisesCompleted = false
-            }
+                routine!.dateLast = NSDate()
+                routine!.days.append(date)
         }
         
-        // Si están completados todos los ejercicios, guarda la fecha y resetea la rutina y vuelve a cargar la vista.
-        if exercisesCompleted
-        {
-            let date = Date()
-            let realm = try! Realm()
-            try! realm.write
-            {
-                    routine!.dateLast = NSDate()
-                    routine!.days.append(date)
-            }
-            
-            self.restartRoutine()
-            self.loadData()
-            self.tableView.reloadData()
-            
-            // Muestra un alert al terminar.
-            let alertController = UIAlertController(title: "Rutina Guardada",
-                                                    message: "La rutina de Hoy se ha guardado", preferredStyle: .Alert)
-            let actionOK = UIAlertAction(title: "OK", style: .Default, handler: nil)
-            alertController.addAction(actionOK)
-            self.presentViewController(alertController, animated: true, completion: nil)
-        }
-            
-        else
-        {
-            // Muestra un alert de no completado.
-            let alertController = UIAlertController(title: "No se puede guardar la rutina",
-                                                    message: "La rutina de Hoy no se ha guardado, Termina todos los ejercicios",
-                                                    preferredStyle: .Alert)
-            
-            let actionOK = UIAlertAction(title: "OK", style: .Default, handler: nil)
-            alertController.addAction(actionOK)
-            self.presentViewController(alertController, animated: true, completion: nil)
-        }
+        self.restartRoutine()
+        self.loadData()
+        self.tableView.reloadData()
         
+        // Muestra un alert al terminar.
+        let alertController = UIAlertController(title: "Rutina Guardada",
+                                                message: "La rutina de Hoy se ha guardado", preferredStyle: .Alert)
+        let actionOK = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertController.addAction(actionOK)
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     //------------------------------------------------------------------------------------------------------------------

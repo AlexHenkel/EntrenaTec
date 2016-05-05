@@ -12,6 +12,7 @@
 		5AAAF09B1CC604B700377561 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAF09A1CC604B700377561 /* AddTableViewController.swift */; };
 		5AAAF09D1CC6054400377561 /* EditRoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAF09C1CC6054400377561 /* EditRoutineTableViewController.swift */; };
 		9537B1461CC87EB5000A5635 /* ExercisesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537B1451CC87EB5000A5635 /* ExercisesList.swift */; };
+		958515DD1CDAB35300A453BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958515DC1CDAB35300A453BC /* Assets.xcassets */; };
 		9597E9CE1CB6E2FC00351A48 /* Exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9597E9CD1CB6E2FC00351A48 /* Exercises.plist */; };
 		95B003901CB40B40002D7DA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */; };
 		95B003941CB40B82002D7DA4 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */; };
@@ -30,7 +31,6 @@
 		FAD88F701CB31F4800A90BE6 /* Building_Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD88F6F1CB31F4800A90BE6 /* Building_Typeface.ttf */; };
 		FAF6BD6C1CABBE2800CEC0C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */; };
 		FAF6BD731CABBE2800CEC0C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD711CABBE2800CEC0C3 /* Main.storyboard */; };
-		FAF6BD751CABBE2800CEC0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD741CABBE2800CEC0C3 /* Assets.xcassets */; };
 		FAF6BD781CABBE2800CEC0C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF6BD761CABBE2800CEC0C3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +55,7 @@
 		5AAAF09A1CC604B700377561 /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
 		5AAAF09C1CC6054400377561 /* EditRoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRoutineTableViewController.swift; sourceTree = "<group>"; };
 		9537B1451CC87EB5000A5635 /* ExercisesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesList.swift; sourceTree = "<group>"; };
+		958515DC1CDAB35300A453BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9597E9CD1CB6E2FC00351A48 /* Exercises.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Exercises.plist; sourceTree = "<group>"; };
 		95B0038F1CB40B40002D7DA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		95B003931CB40B82002D7DA4 /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		FAF6BD681CABBE2800CEC0C3 /* EntrenaTecTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntrenaTecTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF6BD6B1CABBE2800CEC0C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF6BD721CABBE2800CEC0C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAF6BD741CABBE2800CEC0C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF6BD771CABBE2800CEC0C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF6BD791CABBE2800CEC0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,9 +152,9 @@
 				95F444451CB3625E0012F7F6 /* Classes */,
 				95F4443A1CB361570012F7F6 /* Frameworks */,
 				FAD88F6F1CB31F4800A90BE6 /* Building_Typeface.ttf */,
+				958515DC1CDAB35300A453BC /* Assets.xcassets */,
 				9597E9CD1CB6E2FC00351A48 /* Exercises.plist */,
 				FAF6BD711CABBE2800CEC0C3 /* Main.storyboard */,
-				FAF6BD741CABBE2800CEC0C3 /* Assets.xcassets */,
 				FAF6BD761CABBE2800CEC0C3 /* LaunchScreen.storyboard */,
 				FAF6BD791CABBE2800CEC0C3 /* Info.plist */,
 			);
@@ -223,10 +223,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF6BD781CABBE2800CEC0C3 /* LaunchScreen.storyboard in Resources */,
-				FAF6BD751CABBE2800CEC0C3 /* Assets.xcassets in Resources */,
 				9597E9CE1CB6E2FC00351A48 /* Exercises.plist in Resources */,
 				FAF6BD731CABBE2800CEC0C3 /* Main.storyboard in Resources */,
 				FAD88F701CB31F4800A90BE6 /* Building_Typeface.ttf in Resources */,
+				958515DD1CDAB35300A453BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +388,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = EntrenaTecTab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +407,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = EntrenaTecTab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ITESM.EntrenaTec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
